@@ -1,0 +1,87 @@
+﻿<Window x:Class="tbt.Telas.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tbt.Telas"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="700">
+    <Grid Background="#FFFFFF">
+        <!-- Cabeçalho com Título e Botão de Fechar -->
+        <DockPanel  VerticalAlignment="Top" LastChildFill="False" Background="#ffe4ec" Height="69">
+            <TextBlock Text="LOGIN" Margin="0 0 0 18" FontFamily="Georgia" Foreground="#F74780" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" DockPanel.Dock="Bottom"/>
+
+            <Button Content="X" Margin="0 3 3 0" FontFamily="Georgia" Foreground="#F74780" Width="25" Height="25" HorizontalAlignment="Right" 
+                VerticalAlignment="top" Background="Transparent" BorderThickness="1" BorderBrush="#F74780" DockPanel.Dock="Right"/>
+        </DockPanel>
+
+
+        <!--logo-->
+        <Image Source="/Recursos/Imagens/logo.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="200" Margin="0 0 0 150"></Image>
+        <TextBlock Text="Alugueis de brinquedos para festas" FontFamily="Georgia" FontSize="14" Foreground="Black" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 210 0 0"/>
+
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 110 0 0" >
+            <TextBlock Text="Usuário:" HorizontalAlignment="Left" FontFamily="Georgia"></TextBlock>
+            <TextBox Height="20" Width="130" HorizontalAlignment="Center" BorderBrush="#F74780" Margin="10 0 0 0"></TextBox>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 170 0 0" >
+            <TextBlock Text="Senha:" HorizontalAlignment="Left" FontFamily="Georgia"></TextBlock>
+            <TextBox Height="20" Width="130" HorizontalAlignment="Center" BorderBrush="#F74780" Margin="10 0 0 0"></TextBox>
+        </StackPanel>
+
+        <!-- Botões de Confirmar e Cancelar -->
+        <StackPanel Orientation="Horizontal" Margin="0 270 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <Button Content="EXCLUIR" HorizontalAlignment="Center" Margin="0 0 30 0" Width="80" Height="40">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" BorderThickness="1" BorderBrush="#FF96A3">
+                            <StackPanel>
+                                <Image Source="..\Recursos/imagens/check.png" Height="20" HorizontalAlignment="Center"  />
+                                <TextBlock Text="CONFIRMAR" HorizontalAlignment="Center" FontFamily="Georgia"/>
+                            </StackPanel>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button Content="EXCLUIR" HorizontalAlignment="Center" Margin="0 0 0 0" Width="80" Height="40">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" BorderThickness="1" BorderBrush="#FF96A3">
+                            <StackPanel>
+                                <Image Source="..\Recursos/imagens/X.png" Height="21" HorizontalAlignment="Center"  />
+                                <TextBlock Text="CANCELAR" HorizontalAlignment="Center" FontFamily="Georgia"/>
+                            </StackPanel>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </StackPanel>
+
+
+        <TextBlock Text="Não tem uma conta?" Margin="0 0 10 50" FontFamily="Georgia" Foreground="Black" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+
+        <StackPanel Orientation="Horizontal" Margin="0 0 0 20" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
+
+
+            <Button Content="Cadastre-se" HorizontalAlignment="Center" Margin="0 0 40 0" Width="90" Height="30">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" BorderThickness="2" BorderBrush="#FF96A3">
+                            <StackPanel>
+                                <TextBlock Text="Cadastre-se" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 7 0 0" FontFamily="Georgia"/>
+                            </StackPanel>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>

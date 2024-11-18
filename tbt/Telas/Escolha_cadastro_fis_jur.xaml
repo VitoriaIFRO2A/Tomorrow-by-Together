@@ -1,0 +1,33 @@
+﻿<Window x:Class="tbt.Telas.Escolha_cadastro_fis_jur"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tbt.Telas"
+        mc:Ignorable="d"
+        Title="Escolha_cadastro_fis_jur" Height="450" Width="800">
+    <Grid Background="Pink">
+        <!-- Definindo as linhas da grade -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Para o TextBlock -->
+            <RowDefinition Height="*"/>
+            <!-- Para os botões -->
+        </Grid.RowDefinitions>
+
+        <!-- TextBlock na parte superior -->
+        <TextBlock Text="Que tipo de cliente deseja cadastrar?"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="16"
+                   Margin="10"/>
+
+        <!-- StackPanel para os botões, posicionado na segunda linha -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <!-- Botão Cliente Físico -->
+            <Button Content="Cliente Físico" Width="120" Height="40" Margin="5" Click="ClienteFisico_Click"/>
+            <!-- Botão Cliente Jurídico -->
+            <Button Content="Cliente Jurídico" Width="120" Height="40" Margin="5" Click="ClienteJuridico_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

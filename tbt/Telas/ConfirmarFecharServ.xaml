@@ -1,0 +1,56 @@
+﻿<Window x:Class="tbt.Telas.ConfirmarFecharServ"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tbt.Telas"
+        mc:Ignorable="d"
+            Title="ConfirmarFecharServ" Height="200" Width="400" WindowStyle="None" ResizeMode="NoResize">
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="..\recursos\imagens\lacinhobranco.jpg"/>
+        </Grid.Background>
+
+        <!-- Cabeçalho com Título e Botão de Fechar -->
+        <DockPanel  VerticalAlignment="Top" LastChildFill="False" Height="103">
+
+
+            <TextBlock Text="Deseja realmente fechar o serviço?" Margin="0 0 0 45" FontFamily="Georgia" Foreground="#EF3167" FontSize="16" VerticalAlignment="Stretch" HorizontalAlignment="center" DockPanel.Dock="Bottom"/>
+
+            <Button Content="X" Margin="0 3 3 0" FontFamily="Georgia" Foreground="#EF3167" Width="30" Height="30" HorizontalAlignment="Right" 
+                VerticalAlignment="top" Background="Transparent" BorderThickness="1" BorderBrush="#EF3167" DockPanel.Dock="Right" Click="Fechar_Click"/>
+        </DockPanel>
+
+        <!-- Botões de Confirmar e Cancelar -->
+        <StackPanel Orientation="Horizontal" Margin="0 90 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <Button Content="EXCLUIR" HorizontalAlignment="Center" Margin="0 0 30 0" Width="80" Height="40">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" BorderThickness="1" BorderBrush="#EF3167">
+                            <StackPanel>
+                                <Image Source="..\Recursos/imagens/check.png" Height="20" HorizontalAlignment="Center"  />
+                                <TextBlock Text="CONFIRMAR" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button Content="EXCLUIR" HorizontalAlignment="Center" Margin="0 0 0 0" Width="80" Height="40">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" BorderThickness="1" BorderBrush="#EF3167">
+                            <StackPanel>
+                                <Image Source="..\Recursos/imagens/X.png" Height="21" HorizontalAlignment="Center"  />
+                                <TextBlock Text="CANCELAR" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+        </StackPanel>
+        <Image Source="/Recursos/Imagens/logo.png" Margin="0 0 0 0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="110"></Image>
+
+    </Grid>
+</Window>

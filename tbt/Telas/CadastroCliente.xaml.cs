@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace tbt.Telas
 {
     /// <summary>
-    /// Lógica interna para ErroVenda.xaml
+    /// Lógica interna para CadastroCliente.xaml
     /// </summary>
-    public partial class ErroVenda : Window
+    public partial class CadastroCliente : Window
     {
-        public ErroVenda()
+        public CadastroCliente()
         {
             InitializeComponent();
         }

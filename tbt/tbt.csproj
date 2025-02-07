@@ -129,17 +129,8 @@
     <Compile Include="Recursos\Imagens\TelaUsuario.xaml.cs">
       <DependentUpon>TelaUsuario.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Telas\AgendamentoRealizado.xaml.cs">
-      <DependentUpon>AgendamentoRealizado.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\CadastroClienteFisico.xaml.cs">
-      <DependentUpon>CadastroClienteFisico.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\CadastroClienteJuridico.xaml.cs">
-      <DependentUpon>CadastroClienteJuridico.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\CadastroEndereco.xaml.cs">
-      <DependentUpon>CadastroEndereco.xaml</DependentUpon>
+    <Compile Include="Telas\CadastroCliente.xaml.cs">
+      <DependentUpon>CadastroCliente.xaml</DependentUpon>
     </Compile>
     <Compile Include="Telas\CadastroFornecedor.xaml.cs">
       <DependentUpon>CadastroFornecedor.xaml</DependentUpon>
@@ -150,14 +141,8 @@
     <Compile Include="Telas\CadastroProduto.xaml.cs">
       <DependentUpon>CadastroProduto.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Telas\CadastroUsuario.xaml.cs">
-      <DependentUpon>CadastroUsuario.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Catalogo.xaml.cs">
       <DependentUpon>Catalogo.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\ConfirmarAgendamento.xaml.cs">
-      <DependentUpon>ConfirmarAgendamento.xaml</DependentUpon>
     </Compile>
     <Compile Include="Telas\ConfirmarCadastro.xaml.cs">
       <DependentUpon>ConfirmarCadastro.xaml</DependentUpon>
@@ -165,14 +150,8 @@
     <Compile Include="Telas\ConfirmarFecharServ.xaml.cs">
       <DependentUpon>ConfirmarFecharServ.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Telas\ConfirmarPagamento.xaml.cs">
-      <DependentUpon>ConfirmarPagamento.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Telas\ConfirmarVenda.xaml.cs">
       <DependentUpon>ConfirmarVenda.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\ConsultarAgendamento.xaml.cs">
-      <DependentUpon>ConsultarAgendamento.xaml</DependentUpon>
     </Compile>
     <Compile Include="Telas\ConsultarCliente.xaml.cs">
       <DependentUpon>ConsultarCliente.xaml</DependentUpon>
@@ -183,38 +162,17 @@
     <Compile Include="Telas\ConsultarFuncionario.xaml.cs">
       <DependentUpon>ConsultarFuncionario.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Telas\ConsultarUsuario.xaml.cs">
-      <DependentUpon>ConsultarUsuario.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Telas\DadosCorretos.xaml.cs">
       <DependentUpon>DadosCorretos.xaml</DependentUpon>
     </Compile>
     <Compile Include="Telas\DadosIncorretos.xaml.cs">
       <DependentUpon>DadosIncorretos.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Telas\ErroAgendamento.xaml.cs">
-      <DependentUpon>ErroAgendamento.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\ErroPagamento.xaml.cs">
-      <DependentUpon>ErroPagamento.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\ErroVenda.xaml.cs">
-      <DependentUpon>ErroVenda.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Escolha_cadastro_fis_jur.xaml.cs">
-      <DependentUpon>Escolha_cadastro_fis_jur.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="Telas\Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\PagamentoRealizado.xaml.cs">
-      <DependentUpon>PagamentoRealizado.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\VendaRealizada.xaml.cs">
-      <DependentUpon>VendaRealizada.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -224,19 +182,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Telas\AgendamentoRealizado.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Telas\CadastroClienteFisico.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Telas\CadastroClienteJuridico.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Telas\CadastroEndereco.xaml">
+    <Page Include="Telas\CadastroCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -252,15 +198,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Telas\CadastroUsuario.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Telas\Catalogo.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Telas\ConfirmarAgendamento.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -272,15 +210,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Telas\ConfirmarPagamento.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Telas\ConfirmarVenda.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Telas\ConsultarAgendamento.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -296,10 +226,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Telas\ConsultarUsuario.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Telas\DadosCorretos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -308,35 +234,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Telas\ErroAgendamento.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Telas\ErroPagamento.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Telas\ErroVenda.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Telas\Escolha_cadastro_fis_jur.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Telas\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Telas\Menu.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Telas\PagamentoRealizado.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Telas\VendaRealizada.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

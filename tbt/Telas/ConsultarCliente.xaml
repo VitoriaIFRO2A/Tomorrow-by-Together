@@ -44,7 +44,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <GroupBox Header="Dados do Cliente" Background="White" Grid.Row="1" Margin="10,10,10,10" Grid.ColumnSpan="3" BorderBrush="White">
+        <GroupBox Header="Dados do Cliente" Background="White" Grid.Row="1" Margin="10,10,10,10" Grid.ColumnSpan="3" BorderBrush="White" FontFamily="Georgia">
             <Grid Background="White" Height="59">
 
                 <Grid.ColumnDefinitions>
@@ -65,7 +65,7 @@
                 <!-- Nome Empresa -->
                 <StackPanel Grid.ColumnSpan="5" Margin="0,0,0,20">
                     <WrapPanel>
-                        <Label Content="Nome Empresa:" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" Margin="220,0,0,0" BorderBrush="#faccd9"/>
+                        <Label Content="Nome:" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" Margin="220,0,0,0" BorderBrush="#faccd9"/>
                         <TextBox x:Name="txtNomeEmpresa" Width="95" Grid.Column="1" Grid.Row="1" BorderBrush="#faccd9"/>
                         <Button Content="Pesquisar" Grid.Column="2" Grid.Row="1" Margin="1,0,0,0" Width="80" Background="White" BorderBrush="#faccd9"/>
                     </WrapPanel>
@@ -77,9 +77,10 @@
         <!-- DataGrid para exibir resultados da consulta -->
         <DataGrid x:Name="dgFornecedores" Grid.Row="2" Margin="10,10,10,10" AutoGenerateColumns="False" Background="White" BorderBrush="#f9cbd5" Grid.ColumnSpan="3">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding ID}" Width="*" />
+                <DataGridTextColumn Header="NOME" Binding="{Binding NOME}" Width="*" />
                 <DataGridTextColumn Header="CPF" Binding="{Binding CPF}" Width="*" />
-                <DataGridTextColumn Header="Nome do Cliente" Binding="{Binding NomeCliente}" Width="*" />
+                <DataGridTextColumn Header="ENDEREÇO" Binding="{Binding ENDERECO}" Width="*" />
+                <DataGridTextColumn Header="NUMERO" Binding="{Binding NUMERO}" Width="*" />
             </DataGrid.Columns>
         </DataGrid>
 

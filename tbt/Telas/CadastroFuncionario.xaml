@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tbt.Telas"
         mc:Ignorable="d"
-     Title="CadFuncionario" Height="990" Width="800">
+     Title="CadFuncionario" Height="750" Width="800">
     <ScrollViewer>
         <Grid Margin="0">
 
@@ -49,9 +49,7 @@
                                 <RowDefinition Height="40"/>
                                 <RowDefinition Height="40"/>
                                 <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
+                             
 
                             </Grid.RowDefinitions>
 
@@ -71,97 +69,64 @@
                             <TextBlock Text="RG:" Grid.Row="3" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
                             <TextBox Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
 
-                            <!-- N° CTPS -->
-                            <TextBlock Text="N° CTPS:" Grid.Row="4" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                           
+                        
+                            <!-- Estado Civil -->
+                            <TextBlock Text="NÚMERO:" Grid.Row="4" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
                             <TextBox Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
 
-                            <!-- PIS/PASEP -->
-                            <TextBlock Text="PIS/PASEP:" Grid.Row="5" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0" FontFamily="Georgia" FontSize="14"/>
-                            <Grid Grid.Row="5" Grid.Column="1">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-
-                                <TextBox Width="150" Height="25"/>
-
-                                <TextBlock Text="UF" Grid.Column="1" VerticalAlignment="Center" Margin="10" FontFamily="Georgia" FontSize="14"/>
-                                <ComboBox Margin="10 0 0 0" Width="40" Height="25" Grid.Column="1">
-                                    <TextBox Text="UP:"></TextBox>
-                                    <ComboBoxItem Content="UF"/>
-                                    <!-- Adicione mais estados aqui -->
-                                </ComboBox>
-                            </Grid>
-
-                            <!-- Estado Civil -->
-                            <TextBlock Text="ESTADO CIVIL:" Grid.Row="6" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <ComboBox Name="comboEstadoCivil" Grid.Column="1" Grid.Row="6" Height="25" Margin="0 0 -150 0" VerticalAlignment="Center">
-                                <ComboBoxItem Content="Solteiro(a)" />
-                                <ComboBoxItem Content="Casado(a)" />
-                                <ComboBoxItem Content="Divorciado(a)" />
-                                <ComboBoxItem Content="Viúvo(a)" />
-                            </ComboBox>
-
                             <!-- Sexo -->
-                            <TextBlock Text="SEXO:" Grid.Row="7" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <ComboBox Name="comboSexo" Grid.Column="1" Grid.Row="7" Height="25" Margin="0 0 -150 0" VerticalAlignment="Center">
+                            <TextBlock Text="SEXO:" Grid.Row="5" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <ComboBox Name="comboSexo" Grid.Column="1" Grid.Row="5" Height="25" Margin="0 0 -150 0" VerticalAlignment="Center">
                                 <ComboBoxItem Content="Masculino" />
                                 <ComboBoxItem Content="Feminino" />
                                 <ComboBoxItem Content="Outro" />
                             </ComboBox>
 
-                            <!-- Escolaridade -->
-                            <TextBlock Text="ESCOLARIDADE:" Grid.Row="8" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <ComboBox Name="comboEscolaridade" Grid.Column="1" Grid.Row="8" Height="25" Margin="0 0 -150 0" VerticalAlignment="Center">
-                                <ComboBoxItem Content="Ensino Fundamental" />
-                                <ComboBoxItem Content="Ensino Médio" />
-                                <ComboBoxItem Content="Técnico(a)" />
-                                <ComboBoxItem Content="Superior" />
-                            </ComboBox>
-
+                         
                             <!-- Cargo/Função -->
-                            <TextBlock Text="CARGO/FUNÇÃO:" Grid.Row="9" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="9" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
+                            <TextBlock Text="CARGO/FUNÇÃO:" Grid.Row="6" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBox Grid.Column="1" Grid.Row="6" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0" TextChanged="TextBox_TextChanged"/>
 
                             <!-- Telefone -->
-                            <TextBlock Text="TELEFONE:" Grid.Row="10" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="10" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
+                            <TextBlock Text="TELEFONE:" Grid.Row="7" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBox Grid.Column="1" Grid.Row="7" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
 
                             <!-- E-mail -->
-                            <TextBlock Text="E-MAIL:" Grid.Row="11" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="11" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
+                            <TextBlock Text="E-MAIL:" Grid.Row="8" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBox Grid.Column="1" Grid.Row="8" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
 
                             <!-- Estado -->
-                            <TextBlock Text="ESTADO:" Grid.Row="12" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="12" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
+                            <TextBlock Text="ESTADO:" Grid.Row="9" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBox Grid.Column="1" Grid.Row="9" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
 
                             <!-- Cidade -->
-                            <TextBlock Text="CIDADE:" Grid.Row="13" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="13" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
+                            <TextBlock Text="CIDADE:" Grid.Row="10" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBox Grid.Column="1" Grid.Row="10" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
 
                             <!-- Bairro -->
-                            <TextBlock Text="BAIRRO:" Grid.Row="14" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="14" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
+                            <TextBlock Text="BAIRRO:" Grid.Row="11" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBox Grid.Column="1" Grid.Row="11" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
 
                             <!-- Número -->
-                            <TextBlock Text="NÚMERO:" Grid.Row="15" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="15" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
+                            <TextBlock Text="USUÁRIO:" Grid.Row="12" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBox Grid.Column="1" Grid.Row="12" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
 
                             <!-- Ponto de Referência -->
-                            <TextBlock Text="PONTO DE REFERÊNCIA:" Grid.Row="16" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="16" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
+                            <TextBlock Text="SENHA PARA LOGIN:" Grid.Row="13" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBox Grid.Column="1" Grid.Row="13" VerticalAlignment="Center" Height="25" Margin="0 0 -150 0"/>
 
                         </Grid>
 
                         <!-- Botões Laterais -->
 
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="90 0 0 50">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="90 0 0 0">
                             <Button Content="EXCLUIR" HorizontalAlignment="Center" Margin="0 5" Width="150" Height="40" FontFamily="Georgia" FontSize="14">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
                                         <Border Background="Transparent">
                                             <StackPanel>
-                                                <Image Source="/recursos/imagens/excluir.jpeg" Height="24" HorizontalAlignment="Center"/>
+                                                <Image Source="/recursos/Imagens/excluir.png" Height="24" HorizontalAlignment="Center"/>
                                                 <TextBlock Text="EXCLUIR" HorizontalAlignment="Center"/>
                                             </StackPanel>
                                         </Border>
@@ -174,7 +139,7 @@
                                     <ControlTemplate TargetType="Button">
                                         <Border Background="Transparent">
                                             <StackPanel>
-                                                <Image Source="/recursos/imagens/editar.jpeg" Height="24" HorizontalAlignment="Center"/>
+                                                <Image Source="/recursos/Imagens/editar.png" Height="24" HorizontalAlignment="Center"/>
                                                 <TextBlock Text="EDITAR" HorizontalAlignment="Center"/>
                                             </StackPanel>
                                         </Border>
@@ -182,12 +147,12 @@
                                 </Button.Template>
                             </Button>
 
-                            <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0 5" Width="150" Height="40" >
+                            <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0 5" Width="150" Height="40" FontFamily="Georgia" >
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
                                         <Border Background="Transparent">
                                             <StackPanel>
-                                                <Image Source="/recursos/imagens/salvar.jpeg" Height="24" HorizontalAlignment="Center"/>
+                                                <Image Source="/recursos/Imagens/salvar.png" Height="24" HorizontalAlignment="Center"/>
                                                 <TextBlock Text="SALVAR" HorizontalAlignment="Center"/>
                                             </StackPanel>
                                         </Border>

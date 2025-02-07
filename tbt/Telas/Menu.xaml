@@ -5,65 +5,64 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tbt.Telas"
         mc:Ignorable="d"
-       Title="Menu" Height="450" Width="800" Background="#FF3B3B3B">
+      Title="Menu" Height="450" Width="800" Background="#FF3B3B3B">
     <Grid>
         <!-- Menu Lateral -->
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="0 0 0 0" Width="200" Background="#D9D9D9">
-            <WrapPanel Margin="0 50 0 10"  Background="#D4B2A7" Height="35" Width="200">
-                <Image Source="Recursos/Imagens/home.png" Margin="10 5 0 0" Width="25"></Image>
-                <TextBlock Text="Home" Margin="63 10 0 0"/>
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="0 0 0 0" Width="200" Background="#ffeff2">
+            <WrapPanel Margin="0 50 0 10"  Background="#E18585" Height="35" Width="200">
+                <Image Source="/Recursos/Imagens/home.png" Margin="10 5 0 0" Width="25"></Image>
+                <TextBlock Text="Home" Margin="63 10 0 0" FontFamily="georgia"/>
             </WrapPanel>
 
-            <WrapPanel Margin="10 10 0 10" >
-                <Image Source="Recursos/Imagens/lista.png" Width="25"></Image>
-                <Button Content="Lista"  Width="160" Height="30" Background="#D9D9D9" BorderBrush="#D9D9D9" />
-            </WrapPanel>
-
-
-            <WrapPanel Margin="10 10 0 10" >
-                <Image Source="Recursos/Imagens/usuario.png" Width="25"></Image>
-                <Button Content="Usuarios"  Width="160" Height="30" Background="#D9D9D9" BorderBrush="#D9D9D9"/>
-            </WrapPanel>
-
-            <WrapPanel Margin="10 10 0 10" >
-                <Image Source="Recursos/Imagens/produtos.png" Width="25"></Image>
-                <Button Content="Produtos"  Width="160" Height="30" Background="#D9D9D9" BorderBrush="#D9D9D9" />
+            <WrapPanel Margin="10 10 0 20" >
+                <Image Source="/Recursos/Imagens/produtos.png" Width="25"></Image>
+                <Button Content="Catálogo"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia"/>
             </WrapPanel>
 
 
 
-            <WrapPanel Margin="10 10 0 10" >
-                <Image Source="Recursos/Imagens/transacao.png" Width="25"></Image>
-                <Button Content="Transação"  Width="160" Height="30" Background="#D9D9D9" BorderBrush="#D9D9D9" />
+
+            <WrapPanel Margin="10 10 0 20" >
+                <Image Source="/Recursos/Imagens/pesquisa.png" Width="25"></Image>
+                <Button Content="Consultar Produtos"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia"/>
             </WrapPanel>
 
 
-            <WrapPanel Margin="10 10 0 10" >
-                <Image Source="Recursos/Imagens/envios.png" Width="25"></Image>
-                <Button Content="Envios"  Width="160" Height="30" Background="#D9D9D9" BorderBrush="#D9D9D9" />
+            <WrapPanel Margin="10 10 0 20" >
+                <Image Source="/Recursos/Imagens/pesquisa.png" Width="25"></Image>
+                <Button Content="Consultar funcionários"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia"/>
             </WrapPanel>
+
+            <WrapPanel Margin="10 10 0 20" >
+                <Image Source="/Recursos/Imagens/usuario.png" Width="25"></Image>
+                <Button Content="Cadastrar cliente"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia"/>
+            </WrapPanel>
+
 
 
             <WrapPanel Margin="10 10 0 10" >
-                <Image Source="Recursos/Imagens/configuracao.png" Width="25"></Image>
-                <Button Content="configuração"  Width="160" Height="30" Background="#D9D9D9" BorderBrush="#D9D9D9" />
+                <Image Source="/Recursos/Imagens/usuario.png" Width="25"></Image>
+                <Button Content="Cadastrar fornecedor"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia"/>
             </WrapPanel>
+
+
+
 
         </StackPanel>
 
         <!-- Conteúdo Principal -->
-        <Grid Margin="200,0,0,0" Background="#8C6653">
-            <TextBlock Text="Tomorrow by Together" FontSize="28" FontWeight="Bold" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,30,0,0"/>
-            <TextBlock Text="Alugueis de brinquedos para festas" FontWeight="Thin" FontSize="18" Foreground="#D4B2A7" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,70,0,0"/>
+        <Grid Margin="200,0,0,0" Background="#E18585">
+            <TextBlock Text="Tomorrow by Together" FontSize="28" FontWeight="Bold" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,30,0,0" FontFamily="georgia"/>
+            <TextBlock Text="Alugueis de brinquedos para festas" FontWeight="Thin" FontSize="18" Foreground="#89004f" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,70,0,0"/>
 
             <!--logo-->
-            <Image Source="Recursos/Imagens/logo.png" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="250"></Image>
+            <Image Source="../Recursos/Imagens/logo.png" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="250"></Image>
 
             <!--botão sair-->
-            <Button HorizontalAlignment="Right" Margin="0 10 10 0"  Background="#8C6653" VerticalAlignment="Top" Height="30" Width="30">
-                <Image Source="Recursos/Imagens/sair.png" HorizontalAlignment="Right" VerticalAlignment="Top" Height="30"></Image>
+            <Button HorizontalAlignment="Right" Margin="0 10 10 0"  Background="#E18585" VerticalAlignment="Top" Height="30" Width="30" BorderBrush="Transparent" >
+                <Image Source="/Recursos/Imagens/sair.png" HorizontalAlignment="Right" VerticalAlignment="Top" Height="30"></Image>
             </Button>
-
 
         </Grid>
     </Grid>

@@ -59,8 +59,8 @@
     <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=9.1.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.9.1.0\lib\net462\MySql.Data.dll</HintPath>
+    <Reference Include="MySql.Data, Version=9.2.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.9.2.0\lib\net462\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
       <HintPath>..\packages\MySqlConnector.2.4.0\lib\net471\MySqlConnector.dll</HintPath>
@@ -118,12 +118,9 @@
     </ApplicationDefinition>
     <Compile Include="database\Conexao.cs" />
     <Compile Include="Helpers\DAOHelper.cs" />
-    <Compile Include="Models\Cliente _juridico.cs" />
     <Compile Include="Models\Cliente.cs" />
-    <Compile Include="Models\Cliente_fisico.cs" />
     <Compile Include="Models\Cliente_fisicoDAO.cs" />
     <Compile Include="Models\Cliente_juridicoDAO.cs" />
-    <Compile Include="Models\Endereco.cs" />
     <Compile Include="Models\Produto.cs" />
     <Compile Include="Models\ProdutoDAO.cs" />
     <Compile Include="Recursos\Imagens\TelaUsuario.xaml.cs">

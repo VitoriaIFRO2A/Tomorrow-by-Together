@@ -11,7 +11,7 @@ namespace tbt.Models
 {
     internal class Cliente_fisicoDAO
     {
-        private static Conexao _conn = new Conexao();
+        /*private static Conexao _conn = new Conexao();
         public void Insert(Cliente_fisico obj_cli_fis, Endereco obj_end, Cliente obj_cli)
         {
             try
@@ -51,6 +51,6 @@ namespace tbt.Models
             {
                 throw ex;
             }
-        }
+        }*/
     }
 }

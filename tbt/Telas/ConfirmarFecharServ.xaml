@@ -18,7 +18,7 @@
             <TextBlock Text="Deseja realmente fechar o serviço?" Margin="0 0 0 45" FontFamily="Georgia" Foreground="#EF3167" FontSize="16" VerticalAlignment="Stretch" HorizontalAlignment="center" DockPanel.Dock="Bottom"/>
 
             <Button Content="X" Margin="0 3 3 0" FontFamily="Georgia" Foreground="#EF3167" Width="30" Height="30" HorizontalAlignment="Right" 
-                VerticalAlignment="top" Background="Transparent" BorderThickness="1" BorderBrush="#EF3167" DockPanel.Dock="Right" Click="Fechar_Click"/>
+                VerticalAlignment="top" Background="Transparent" BorderThickness="1" BorderBrush="#EF3167" DockPanel.Dock="Right" />
         </DockPanel>
 
         <!-- Botões de Confirmar e Cancelar -->

@@ -9,7 +9,7 @@ namespace tbt.Models
 {
     internal class Cliente_juridicoDAO
     {
-        private static Conexao _conn = new Conexao();
+        /*private static Conexao _conn = new Conexao();
         public void Insert(Cliente_juridico obj_cli_jur, Endereco obj_end, Cliente obj_cli)
         {
             try
@@ -51,6 +51,6 @@ namespace tbt.Models
             {
                 throw ex;
             }
-        }
+        }*/
     }
 }

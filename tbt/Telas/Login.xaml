@@ -33,7 +33,7 @@
 
         <!-- Botões de Confirmar e Cancelar -->
         <StackPanel Orientation="Horizontal" Margin="0 270 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" >
-            <Button Content="EXCLUIR" HorizontalAlignment="Center" Margin="0 0 30 0" Width="80" Height="40">
+            <Button Content="EXCLUIR" HorizontalAlignment="Center" Margin="0 0 30 0" Width="80" Height="40" Click="Button_Click">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border CornerRadius="10" BorderThickness="1" BorderBrush="#FF96A3">

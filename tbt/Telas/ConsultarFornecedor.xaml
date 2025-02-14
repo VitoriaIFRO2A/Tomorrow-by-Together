@@ -26,12 +26,9 @@
         </Style>
     </Window.Resources>
 
-    <Grid>
+    <Grid Background="#ffe4ec">
 
-        <Grid.Background>
-            <ImageBrush ImageSource= "/Recursos/Imagens/fundo.jpeg" />
-
-        </Grid.Background>
+       
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="509*"/>
             <ColumnDefinition Width="16*"/>
@@ -57,16 +54,16 @@
                 <StackPanel Grid.ColumnSpan="5" Margin="0,0,0,20">
                     <WrapPanel>
                         <Label Content="CNPJ:" Grid.Column="0" VerticalAlignment="Center"/>
-                        <TextBox x:Name="txtCNPJ" Width="100" Grid.Column="1"  BorderBrush="#faccd9"/>
-                        <Button Content="Pesquisar" Grid.Column="2" Margin="1,0,0,0" Width="80" Background="White" BorderBrush="#faccd9"/>
+                        <TextBox x:Name="txtCNPJ" Width="100" Grid.Column="1"  BorderBrush="#F74780"/>
+                        <Button Content="Pesquisar" Grid.Column="2" Margin="1,0,0,0" Width="80" Background="White" BorderBrush="#F74780" Click="Button_Click"/>
                     </WrapPanel>
                 </StackPanel>
                 <!-- Nome Empresa -->
                 <StackPanel Grid.ColumnSpan="5" Margin="0,0,0,20">
                     <WrapPanel>
-                        <Label Content="Nome Empresa:" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" Margin="220,0,0,0" BorderBrush="#faccd9"/>
-                        <TextBox x:Name="txtNomeEmpresa" Width="95" Grid.Column="1" Grid.Row="1" BorderBrush="#faccd9"/>
-                        <Button Content="Pesquisar" Grid.Column="2" Grid.Row="1" Margin="1,0,0,0" Width="80" Background="White" BorderBrush="#faccd9"/>
+                        <Label Content="Nome Empresa:" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" Margin="220,0,0,0" BorderBrush="#F74780"/>
+                        <TextBox x:Name="txtNomeEmpresa" Width="95" Grid.Column="1" Grid.Row="1" BorderBrush="#F74780"/>
+                        <Button Content="Pesquisar" Grid.Column="2" Grid.Row="1" Margin="1,0,0,0" Width="80" Background="White" BorderBrush="#F74780"/>
                     </WrapPanel>
 
                 </StackPanel>
@@ -74,7 +71,7 @@
         </GroupBox>
 
         <!-- DataGrid para exibir resultados da consulta -->
-        <DataGrid x:Name="dgFornecedores" Grid.Row="2" Margin="10,10,10,10" AutoGenerateColumns="False" Background="White" BorderBrush="#f9cbd5" Grid.ColumnSpan="2">
+        <DataGrid x:Name="dgFornecedores" Grid.Row="2" Margin="10,10,10,10" AutoGenerateColumns="False" Background="White" BorderBrush="#F74780" Grid.ColumnSpan="2">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="CNPJ" Binding="{Binding CNPJ}" Width="*" />
                 <DataGridTextColumn Header="Nome da Empresa" Binding="{Binding NomeEmpresa}" Width="*" />
@@ -83,8 +80,28 @@
 
         <!-- Botões de ação -->
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left" Margin="121,10,0,10">
-            <Button Content="Realizar Nova Pesquisa" Margin="10"  Background="White" Foreground="Black" BorderBrush="White" Height="31"/>
-            <Button Content="Voltar ao Menu Inicial" Margin="10"  Background="White" Foreground="Black" BorderBrush="White"/>
+            <Button Content="Realizar Nova Pesquisa" Margin="10"  Background="White" Foreground="Black" BorderBrush="#F74780" Height="31">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" BorderThickness="1" BorderBrush="#F74780">
+                            <StackPanel>
+                                <TextBlock Text="Realizar Nova Pesquisa" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5 7 5 0" FontFamily="Georgia"/>
+                            </StackPanel>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Content="Voltar ao Menu Inicial" Margin="10"  Background="White" Foreground="Black" BorderBrush="#F74780">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" BorderThickness="1" BorderBrush="#F74780">
+                            <StackPanel>
+                                <TextBlock Text="Voltar ao Menu Inicial" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5 7 5 0" FontFamily="Georgia"/>
+                            </StackPanel>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>

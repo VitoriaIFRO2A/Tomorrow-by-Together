@@ -36,7 +36,7 @@
             <Button Content="EXCLUIR" HorizontalAlignment="Center" Margin="0 0 30 0" Width="80" Height="40" Click="Button_Click">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
-                        <Border CornerRadius="10" BorderThickness="1" BorderBrush="#FF96A3">
+                        <Border CornerRadius="10" BorderThickness="1" BorderBrush="#F74780">
                             <StackPanel>
                                 <Image Source="..\Recursos/imagens/check.png" Height="20" HorizontalAlignment="Center"  />
                                 <TextBlock Text="CONFIRMAR" HorizontalAlignment="Center" FontFamily="Georgia"/>
@@ -49,7 +49,7 @@
             <Button Content="EXCLUIR" HorizontalAlignment="Center" Margin="0 0 0 0" Width="80" Height="40">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
-                        <Border CornerRadius="10" BorderThickness="1" BorderBrush="#FF96A3">
+                        <Border CornerRadius="10" BorderThickness="1" BorderBrush="#F74780">
                             <StackPanel>
                                 <Image Source="..\Recursos/imagens/X.png" Height="21" HorizontalAlignment="Center"  />
                                 <TextBlock Text="CANCELAR" HorizontalAlignment="Center" FontFamily="Georgia"/>
@@ -69,7 +69,7 @@
             <Button Content="Cadastre-se" HorizontalAlignment="Center" Margin="0 0 40 0" Width="90" Height="30">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
-                        <Border CornerRadius="10" BorderThickness="2" BorderBrush="#FF96A3">
+                        <Border CornerRadius="10" BorderThickness="2" BorderBrush="#F74780">
                             <StackPanel>
                                 <TextBlock Text="Cadastre-se" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 7 0 0" FontFamily="Georgia"/>
                             </StackPanel>

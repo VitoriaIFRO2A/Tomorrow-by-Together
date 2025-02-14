@@ -6,12 +6,10 @@
         xmlns:local="clr-namespace:tbt.Telas"
         mc:Ignorable="d"
        Title="Cadastro de produto" Height="500" Width="715">
-    <Grid Margin="0">
+    <Grid Margin="0" Background="#ffe4ec">
 
         <Grid >
-            <Grid.Background>
-                <ImageBrush ImageSource="/Recursos/Imagens/fundoRosa.jfif"/>
-            </Grid.Background>
+            
 
             <Grid Margin="20">
                 <!-- Título -->
@@ -72,33 +70,22 @@
 
                 <!-- Botões Laterais -->
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="center" VerticalAlignment="Bottom">
-                    <Button Content="EXCLUIR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" FontFamily="Georgia" FontSize="14">
+                    <Button Content="LIMPAR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" FontFamily="Georgia" FontSize="14">
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border Background="Transparent">
                                     <StackPanel>
-                                        <Image Source="../Recursos/imagens/excluir.png" Height="24" HorizontalAlignment="Center"  />
-                                        <TextBlock Text="EXCLUIR" HorizontalAlignment="Center"/>
+                                        <Image Source="../Recursos/imagens/VASSOURINHA.png" Height="24" HorizontalAlignment="Center"  />
+                                        <TextBlock Text="LIMPAR" HorizontalAlignment="Center"/>
                                     </StackPanel>
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
 
-                    <Button Content="EDITAR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" FontFamily="Georgia" FontSize="14">
-                        <Button.Template>
-                            <ControlTemplate TargetType="Button">
-                                <Border Background="Transparent">
-                                    <StackPanel>
-                                        <Image Source= "../Recursos/Imagens/EDITAR.png" Height="24" HorizontalAlignment="Center"/>
-                                        <TextBlock Text="EDITAR" HorizontalAlignment="Center"/>
-                                    </StackPanel>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
-                    </Button>
 
-                    <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" >
+
+                    <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" FontFamily="Georgia" FontSize="14" >
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border Background="Transparent">

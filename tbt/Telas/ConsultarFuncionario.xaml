@@ -26,12 +26,9 @@
         </Style>
     </Window.Resources>
 
-    <Grid>
+    <Grid Background="#ffe4ec">
 
-        <Grid.Background>
-            <ImageBrush ImageSource= "/Recursos/Imagens/fundo.jpeg" />
-
-        </Grid.Background>
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="64*"/>
             <ColumnDefinition Width="445*"/>
@@ -56,25 +53,25 @@
                 <StackPanel Grid.Column="0">
                     <WrapPanel>
                         <Label Content="CPF:" Grid.Column="0" VerticalAlignment="Center"/>
-                        <TextBox x:Name="txtCNPJ" Width="100" Grid.Column="1"  BorderBrush="#faccd9"/>
-                        <Button Content="Pesquisar" Grid.Column="2" Margin="1,0,0,0" Width="80" Background="White" BorderBrush="#faccd9"/>
+                        <TextBox x:Name="txtCNPJ" Width="100" Grid.Column="1"  BorderBrush="#F74780"/>
+                        <Button Content="Pesquisar" Grid.Column="2" Margin="1,0,0,0" Width="80" Background="White" BorderBrush="#F74780"/>
                     </WrapPanel>
                 </StackPanel>
                 <!-- Nome -->
                 <StackPanel Grid.Column="1">
                     <WrapPanel>
-                        <Label Content="Nome:" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" BorderBrush="#faccd9"/>
-                        <TextBox x:Name="txtNomeEmpresa" Width="95" Grid.Column="1" Grid.Row="1" BorderBrush="#faccd9"/>
-                        <Button Content="Pesquisar" Grid.Column="2" Grid.Row="1" Margin="1,0,0,0" Width="80" Background="White" BorderBrush="#faccd9"/>
+                        <Label Content="Nome:" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" BorderBrush="#F74780"/>
+                        <TextBox x:Name="txtNomeEmpresa" Width="95" Grid.Column="1" Grid.Row="1" BorderBrush="#F74780"/>
+                        <Button Content="Pesquisar" Grid.Column="2" Grid.Row="1" Margin="1,0,0,0" Width="80" Background="White" BorderBrush="#F74780"/>
                     </WrapPanel>
 
                 </StackPanel>
 
                 <StackPanel Grid.Column="3">
                     <WrapPanel>
-                        <Label Content="Codigo:" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center"  BorderBrush="#faccd9"/>
-                        <TextBox x:Name="txtCodigo" Width="95" Grid.Column="1" Grid.Row="1" BorderBrush="#faccd9"/>
-                        <Button Content="Pesquisar" Grid.Column="2" Grid.Row="1"  Width="70" Background="White" BorderBrush="#faccd9"/>
+                        <Label Content="Codigo:" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center"  BorderBrush="#F74780"/>
+                        <TextBox x:Name="txtCodigo" Width="95" Grid.Column="1" Grid.Row="1" BorderBrush="#F74780"/>
+                        <Button Content="Pesquisar" Grid.Column="2" Grid.Row="1"  Width="70" Background="White" BorderBrush="#F74780"/>
                     </WrapPanel>
 
                 </StackPanel>
@@ -84,7 +81,7 @@
         </GroupBox>
 
         <!-- DataGrid para exibir resultados da consulta -->
-        <DataGrid x:Name="dgFornecedores" Grid.Row="2" Margin="10,10,10,10" AutoGenerateColumns="False" Background="White" BorderBrush="#f9cbd5" Grid.ColumnSpan="3">
+        <DataGrid x:Name="dgFornecedores" Grid.Row="2" Margin="10,10,10,10" AutoGenerateColumns="False" Background="White" BorderBrush="#F74780" Grid.ColumnSpan="3">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Nome" Binding="{Binding NOME}" Width="*" />
                 <DataGridTextColumn Header="CPF" Binding="{Binding CPF}" Width="*" />
@@ -93,9 +90,29 @@
         </DataGrid>
 
         <!-- Botões de ação -->
-        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left" Margin="57,10,0,10" Grid.Column="1">
-            <Button Content="Realizar Nova Pesquisa" Margin="10"  Background="White" Foreground="Black" BorderBrush="White" Height="31"/>
-            <Button Content="Voltar ao Menu Inicial" Margin="10"  Background="White" Foreground="Black" BorderBrush="White"/>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 10 0 10" Grid.Column="1">
+            <Button Content="Realizar Nova Pesquisa" Margin="10"  Background="White" Foreground="Black" BorderBrush="#F74780" Height="31">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" BorderThickness="1" BorderBrush="#F74780">
+                            <StackPanel>
+                                <TextBlock Text="Realizar Nova Pesquisa" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5 7 5 0" FontFamily="Georgia"/>
+                            </StackPanel>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Content="Voltar ao Menu Inicial" Margin="10"  Background="White" Foreground="Black" BorderBrush="#F74780">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" BorderThickness="1" BorderBrush="#F74780">
+                            <StackPanel>
+                                <TextBlock Text="Voltar ao Menu Inicial" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5 7 5 0" FontFamily="Georgia"/>
+                            </StackPanel>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>

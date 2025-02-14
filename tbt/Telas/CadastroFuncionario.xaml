@@ -7,14 +7,12 @@
         mc:Ignorable="d"
      Title="CadFuncionario" Height="750" Width="800">
     <ScrollViewer>
-        <Grid Margin="0">
+        <Grid Margin="0" Background="#ffe4ec">
 
 
 
             <Grid >
-                <Grid.Background>
-                    <ImageBrush ImageSource="/Recursos/Imagens/fundoRosa.jfif"/>
-                </Grid.Background>
+              
 
                 <!-- Caixa de fundo -->
                 <Border Margin="20" CornerRadius="50">
@@ -49,7 +47,7 @@
                                 <RowDefinition Height="40"/>
                                 <RowDefinition Height="40"/>
                                 <RowDefinition Height="40"/>
-                             
+                                <RowDefinition Height="40"/>
 
                             </Grid.RowDefinitions>
 
@@ -72,7 +70,7 @@
                            
                         
                             <!-- Estado Civil -->
-                            <TextBlock Text="NÚMERO:" Grid.Row="4" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBlock Text="TELEFONE:" Grid.Row="4" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
                             <TextBox Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Height="25" />
 
                             <!-- Sexo -->
@@ -85,69 +83,61 @@
 
                          
                             <!-- Cargo/Função -->
-                            <TextBlock Text="CARGO/FUNÇÃO:" Grid.Row="6" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBlock Text="E-MAIL:" Grid.Row="6" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
                             <TextBox Grid.Column="1" Grid.Row="6" VerticalAlignment="Center" Height="25"  TextChanged="TextBox_TextChanged"/>
 
                             <!-- Telefone -->
-                            <TextBlock Text="TELEFONE:" Grid.Row="7" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBlock Text="CARGO/FUNÇÃO:" Grid.Row="7" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
                             <TextBox Grid.Column="1" Grid.Row="7" VerticalAlignment="Center" Height="25" />
 
                             <!-- E-mail -->
-                            <TextBlock Text="E-MAIL:" Grid.Row="8" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBlock Text="ESTADO:" Grid.Row="8" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
                             <TextBox Grid.Column="1" Grid.Row="8" VerticalAlignment="Center" Height="25" />
 
                             <!-- Estado -->
-                            <TextBlock Text="ESTADO:" Grid.Row="9" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBlock Text="CIDADE:" Grid.Row="9" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
                             <TextBox Grid.Column="1" Grid.Row="9" VerticalAlignment="Center" Height="25" />
 
                             <!-- Cidade -->
-                            <TextBlock Text="CIDADE:" Grid.Row="10" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBlock Text="BAIRRO:" Grid.Row="10" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
                             <TextBox Grid.Column="1" Grid.Row="10" VerticalAlignment="Center" Height="25" />
 
                             <!-- Bairro -->
-                            <TextBlock Text="BAIRRO:" Grid.Row="11" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBlock Text="RUA/AVENIDA:" Grid.Row="11" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
                             <TextBox Grid.Column="1" Grid.Row="11" VerticalAlignment="Center" Height="25" />
 
                             <!-- Número -->
-                            <TextBlock Text="USUÁRIO:" Grid.Row="12" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBlock Text="NÚMERO:" Grid.Row="12" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
                             <TextBox Grid.Column="1" Grid.Row="12" VerticalAlignment="Center" Height="25" />
 
                             <!-- Ponto de Referência -->
-                            <TextBlock Text="SENHA PARA LOGIN:" Grid.Row="13" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBlock Text="USUÁRIO:" Grid.Row="13" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
                             <TextBox Grid.Column="1" Grid.Row="13" VerticalAlignment="Center" Height="25" />
+
+                            <!-- Ponto de Referência -->
+                            <TextBlock Text="SENHA PARA LOGIN:" Grid.Row="14" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
+                            <TextBox Grid.Column="1" Grid.Row="14" VerticalAlignment="Center" Height="25" />
 
                         </Grid>
 
                         <!-- Botões Laterais -->
 
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="center" VerticalAlignment="Bottom" >
-                            <Button Content="EXCLUIR" HorizontalAlignment="Center" Margin="0 5" Width="150" Height="40" FontFamily="Georgia" FontSize="14">
+                            <Button Content="LIMPAR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" FontFamily="Georgia" FontSize="14">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
                                         <Border Background="Transparent">
                                             <StackPanel>
-                                                <Image Source="/recursos/Imagens/excluir.png" Height="24" HorizontalAlignment="Center"/>
-                                                <TextBlock Text="EXCLUIR" HorizontalAlignment="Center"/>
+                                                <Image Source="../Recursos/imagens/VASSOURINHA.png" Height="24" HorizontalAlignment="Center"  />
+                                                <TextBlock Text="LIMPAR" HorizontalAlignment="Center"/>
                                             </StackPanel>
                                         </Border>
                                     </ControlTemplate>
                                 </Button.Template>
                             </Button>
 
-                            <Button Content="EDITAR" HorizontalAlignment="Center" Margin="0 5" Width="150" Height="40" FontFamily="Georgia" FontSize="14">
-                                <Button.Template>
-                                    <ControlTemplate TargetType="Button">
-                                        <Border Background="Transparent">
-                                            <StackPanel>
-                                                <Image Source="/recursos/Imagens/editar.png" Height="24" HorizontalAlignment="Center"/>
-                                                <TextBlock Text="EDITAR" HorizontalAlignment="Center"/>
-                                            </StackPanel>
-                                        </Border>
-                                    </ControlTemplate>
-                                </Button.Template>
-                            </Button>
 
-                            <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0 5" Width="150" Height="40" FontFamily="Georgia" >
+                            <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0 5" Width="150" Height="40" FontFamily="Georgia" FontSize="14">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
                                         <Border Background="Transparent">

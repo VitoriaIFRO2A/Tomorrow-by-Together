@@ -20,7 +20,7 @@
                 <TextBlock Text="DADOS CORRETOS!" FontFamily="Georgia" Foreground="#2A9C01" FontWeight="Bold" HorizontalAlignment="Center" Margin="5"/>
                 <TextBlock Text="Seu cadastro foi realizado com sucesso!"  HorizontalAlignment="Center" Margin="5 60 0 0"/>
                 <TextBlock Text="Clique em sair para continuar a navegar no sistema."  HorizontalAlignment="Center" Margin="5 0 0 0"/>
-                <Button Content="SAIR" FontFamily="Georgia" Width="100" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="10 30 0 0" Background="#92E37C"/>
+                <Button Content="SAIR" FontFamily="Georgia" Width="100" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="10 20 0 0" Background="#92E37C"/>
             </StackPanel>
         </Border>
     </Grid>

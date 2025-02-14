@@ -119,8 +119,8 @@
     <Compile Include="database\Conexao.cs" />
     <Compile Include="Helpers\DAOHelper.cs" />
     <Compile Include="Models\Cliente.cs" />
-    <Compile Include="Models\Cliente_fisicoDAO.cs" />
-    <Compile Include="Models\Cliente_juridicoDAO.cs" />
+    <Compile Include="Models\ClienteDAO.cs" />
+    <Compile Include="Models\Funcionario.cs" />
     <Compile Include="Models\Produto.cs" />
     <Compile Include="Models\ProdutoDAO.cs" />
     <Compile Include="Recursos\Imagens\TelaUsuario.xaml.cs">
@@ -272,9 +272,15 @@
     <Content Include="Recursos\Imagens\brinquedo1.jfif" />
     <Content Include="Recursos\Imagens\brinquedo2.jfif" />
     <Content Include="Recursos\Imagens\brinquedo3.jfif" />
+    <Resource Include="Recursos\Imagens\brinquedo4.jpeg" />
+    <Resource Include="Recursos\Imagens\brinquedo5.jpeg" />
+    <Resource Include="Recursos\Imagens\brinquedo6.jpeg" />
+    <Resource Include="Recursos\Imagens\brinquedo7.jpeg" />
+    <Resource Include="Recursos\Imagens\brinquedo8.jpeg" />
     <Content Include="Recursos\Imagens\fundobeijos.jfif" />
     <Content Include="Recursos\Imagens\FundoRosa.jfif" />
     <Content Include="Recursos\Imagens\fundorossemdetalhes.jfif" />
+    <Resource Include="Recursos\Imagens\VASSOURINHA.png" />
     <Resource Include="Recursos\Imagens\x.png" />
     <Resource Include="Recursos\Imagens\usuario.png" />
     <Resource Include="Recursos\Imagens\transacao.png" />

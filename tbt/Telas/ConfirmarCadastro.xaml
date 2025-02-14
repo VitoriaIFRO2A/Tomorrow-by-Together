@@ -7,10 +7,8 @@
         mc:Ignorable="d"
                    Title="Confirmação de cadastro" Height="200" Width="400" WindowStyle="None" ResizeMode="NoResize">
 
-    <Grid >
-        <Grid.Background>
-            <ImageBrush ImageSource="..\recursos\imagens\lacinhobranco.jpg"/>
-        </Grid.Background>
+    <Grid  Background= "White">
+       
 
         <!-- Cabeçalho com Título e Botão de Fechar -->
         <DockPanel  VerticalAlignment="Top" LastChildFill="False" Height="103">

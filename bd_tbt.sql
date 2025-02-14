@@ -39,7 +39,7 @@ create table login(
 );
 
 create table fornecedor(
-	id_for int primary key,
+	id_for int primary key auto_increment,
 	razao_social_for varchar(200),
 	nome_fantasia_for varchar(200),
     telefone_for varchar(200),
@@ -51,7 +51,7 @@ create table fornecedor(
 );
 
 create table produto(
-	id_pro int primary key,
+	id_pro int primary key auto_increment,
 	tipo_produto_pro varchar(200),
     marca_pro varchar(200),
     modelo_pro varchar(200),
@@ -65,7 +65,7 @@ create table produto(
 );
 
 create table venda(
-	id_ven int primary key,
+	id_ven int primary key auto_increment,
     hora_ven time,
     data_ven date,
     id_fun_fk int,
@@ -75,7 +75,7 @@ create table venda(
 );
 
 create table venda_produto(
-	id_ven_pro int primary key,
+	id_ven_pro int primary key auto_increment,
 	id_ven_fk int,
     foreign key (id_ven_fk) references venda (id_ven),
     id_pro_fk int,

@@ -20,8 +20,8 @@
                 <!-- Labels e Campos de Entrada -->
                 <Grid VerticalAlignment="Top" Margin="0,40,0,0">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="150"/>
-                        <ColumnDefinition Width="300"/>
+                        <ColumnDefinition Width="0.30*"/>
+                        <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="40"/>
@@ -71,7 +71,7 @@
                 </Grid>
 
                 <!-- Botões Laterais -->
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="90 0 0 0">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="center" VerticalAlignment="Bottom">
                     <Button Content="EXCLUIR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" FontFamily="Georgia" FontSize="14">
                         <Button.Template>
                             <ControlTemplate TargetType="Button">

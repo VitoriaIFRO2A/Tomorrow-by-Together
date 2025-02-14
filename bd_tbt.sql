@@ -1,52 +1,85 @@
 Create database Tomorrow_by_Together;
 use Tomorrow_by_Together;
 
-Create table Endereco(
-	id_end int auto_increment,
-	cep_end varchar(100),
-	rua_end varchar(200),
-	numero_end int,
-	bairro_end varchar(100),
-	cidade_end varchar(100),
-	estado_end varchar(100)
-);
-
-create table equipamento (
-    id_equi int primary key auto_increment,
-    marca_equi varchar(100),
-    tipo_equipamento_equi varchar(100),
-    modelo_equi varchar(100),
-    cor_equi varchar(100),
-    preco_custo_equi float,
-    referencia_equi varchar(100),
-    descricao_equi varchar(250),
-    valor_aluguel_equi float
-);
-
 Create table Cliente(
 	id_cli int auto_increment,
-    tipo_pessoa_cli varchar(200),
-    telefone_cli varchar(20)
+    nome_cli varchar(200),
+	cpf_cli varchar(200),
+    telefone_cli varchar(200),
+    estado_cli varchar(200),
+    cidade_cli varchar(200),
+    rua_cli varchar(200),
+    numero_cli int,
+    bairro_cli varchar(200)
 );
 
-Create table Cliente_fisico(
-	id_cli_fis int auto_increment,
-	nome_cli_fis varchar(200),
-	rg_cli_fis varchar(50),
-	cpf_cli_fis varchar(50),
-	data_nascimento_cli_fis date,
-	estado_civil_cli_fis varchar(200),
-	id_cli_fk int,
-    foreign key (id_cli_fk) references Cliente(id_cli)
+create table funcionario(
+	id_fun int auto_increment,
+    nome_fun varchar(200),
+    data_nascimento_fun date,
+	cpf_fun varchar(200),
+    rg_fun varchar(200),
+    sexo_fun varchar(200),
+    funcao_fun varchar(200),
+    telefone_fun varchar(200),
+    email_fun varchar(200),
+    estado_fun varchar(200),
+    cidade_fun varchar(200),
+    rua_fun varchar(200),
+    numero_fun int,
+    bairro_fun varchar(200)
 );
 
-Create table Cliente_juridico (
-    id_cli_jur int primary key auto_increment,
-    razao_social_cli_jur varchar(200),
-    nome_fantasia_cli_jur varchar(200),
-    inscricao_estadual_cli_jur varchar(50),
-    cnpj_cli_jur varchar(50),
-    data_abertura_cli_jur date,
+create table login(
+	id_login int auto_increment,
+	usuario_login varchar(200),
+	senha_login varchar(200),
+	id_fun_fk int,
+    foreign key (id_fun_fk) references funcionario (id_fun)
+);
+
+create table fornecedor(
+	id_for int primary key,
+	razao_social_for varchar(200),
+	nome_fantasia_for varchar(200),
+    telefone_for varchar(200),
+    email_for varchar(200),
+    estado_for varchar(200),
+    cidade_for varchar(200),
+    bairro_for varchar(200),
+    numero_for int
+);
+
+create table produto(
+	id_pro int primary key,
+	tipo_produto_pro varchar(200),
+    marca_pro varchar(200),
+    modelo_pro varchar(200),
+    referencia_pro varchar(200),
+    descricao_pro varchar(200),
+    preco_custo_pro float,
+    valor_aluguel_pro float,
+    cor_pro varchar(200),
+    id_for_fk int,
+    foreign key (id_for_fk) references fornecedir (id_for)
+);
+
+create table venda(
+	id_ven int primary key,
+    hora_ven time,
+    data_ven date,
+    id_fun_fk int,
+    foreign key (id_fun_fk) references funcionario (id_fun),
     id_cli_fk int,
-    foreign key (id_cli_fk) references Cliente(id_cli)
+    foreign key (id_cli_fk) references cliente (id_cli)
 );
+
+create table venda_produto(
+	id_ven_pro int primary key,
+	id_ven_fk int,
+    foreign key (id_ven_fk) references venda (id_ven),
+    id_pro_fk int,
+    foreign key (id_pro_fk) references produto (id_pro)
+);
+
+insert into login values (1, 'admin', '1234', null);

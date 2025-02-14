@@ -15,7 +15,7 @@
                 </Grid.Background>
 
                 <!-- Caixa de fundo -->
-                <Border Margin="20 20 20 20" CornerRadius="50">
+                <Border Margin="20" CornerRadius="50">
 
                     <Grid Margin="20">
 
@@ -27,19 +27,19 @@
 
                             <Grid.ColumnDefinitions>
 
-                                <ColumnDefinition Width="200"/>
-                                <ColumnDefinition Width="250"/>
+                                <ColumnDefinition Width="0.35*"/>
+                                <ColumnDefinition Width="*"/>
 
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
 
                                 <RowDefinition Height="40"/>
                                 <RowDefinition Height="40"/>
-                                <RowDefinition Height="54"/>
-                                <RowDefinition Height="26"/>
                                 <RowDefinition Height="40"/>
-                                <RowDefinition Height="20"/>
-                                <RowDefinition Height="60"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
                                 <RowDefinition Height="40"/>
 
 
@@ -47,49 +47,49 @@
 
                             <!-- Razão Social -->
                             <TextBlock Text="NOME:" VerticalAlignment="Center" Margin="0,0,10,0" FontFamily="Georgia" FontSize="14" Height="16"/>
-                            <TextBox Grid.Column="1" VerticalAlignment="Center" Height="24" Margin="0,0,-150,0" Name="razao_social"/>
+                            <TextBox Grid.Column="1" VerticalAlignment="Center" Height="24"  Name="razao_social"/>
 
                             <!-- Nome Fantasia -->
                             <TextBlock Text="CPF:" Grid.Row="1" VerticalAlignment="Center" Margin="0,0,10,0" FontFamily="Georgia" FontSize="14" Height="16"/>
-                            <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Height="24" Margin="0,0,-150,0" Name="nome_fantasia"/>
+                            <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Height="24"  Name="nome_fantasia"/>
 
                             <!-- Inscrição Estadual -->
                             <TextBlock Text="NUMERO DE TELEFONE:" Grid.Row="2" VerticalAlignment="Center" Margin="0,0,10,0" FontFamily="Georgia" FontSize="14" Height="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Height="26" Margin="0,0,-150,0" Name="inscricaoEstadual"/>
+                            <TextBox Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Height="26"  Name="inscricaoEstadual"/>
 
 
                             <!-- Estado -->
                             <TextBlock Text="ESTADO:" Grid.Row="3" VerticalAlignment="Center" Margin="0,0,10,0" FontFamily="Georgia" FontSize="14" Height="16"/>
-                            <TextBox Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Height="24" Margin="0,0,-150,0" Name="estado"/>
+                            <TextBox Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Height="24"  Name="estado"/>
 
                             <!-- Cidade -->
                             <TextBlock Text="CIDADE:" Grid.Row="4" VerticalAlignment="Center" Margin="0,0,10,0" FontFamily="Georgia" FontSize="14" Height="16"/>
-                            <TextBox Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Height="24" Margin="0,0,-150,0" Name="cidade"/>
+                            <TextBox Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Height="24"  Name="cidade"/>
 
                             <!-- Rua -->
                             <TextBlock Text="RUA:" Grid.Row="5" VerticalAlignment="Center" Margin="0,0,10,0" FontFamily="Georgia" FontSize="14" Height="16"/>
-                            <TextBox Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" Height="24" Margin="0,0,-150,0" Name="rua"/>
+                            <TextBox Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" Height="24"  Name="rua"/>
 
                             <!-- Número -->
                             <TextBlock Text="NÚMERO:" Grid.Row="6" VerticalAlignment="Center" Margin="0,0,10,0" FontFamily="Georgia" FontSize="14" Height="16"/>
-                            <TextBox Grid.Column="1" Grid.Row="6" VerticalAlignment="Center" Height="24" Margin="0,0,-150,0" Name="numero"/>
+                            <TextBox Grid.Column="1" Grid.Row="6" VerticalAlignment="Center" Height="24"  Name="numero"/>
 
                             <!-- Bairro -->
                             <TextBlock Text="BAIRRO:" Grid.Row="11" VerticalAlignment="Center" Margin="0,0,10,0" FontFamily="Georgia" FontSize="14" Height="16"/>
-                            <TextBox Grid.Column="1" Grid.Row="11" VerticalAlignment="Center" Height="24" Margin="0,0,-150,0" Name="bairro"/>
+                            <TextBox Grid.Column="1" Grid.Row="11" VerticalAlignment="Center" Height="24"  Name="bairro"/>
 
 
                         </Grid>
 
                         
 
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="90 0 0 0">
-                            <Button Content="EXCLUIR" HorizontalAlignment="Center" Margin="0 5" Width="150" Height="40" FontFamily="Georgia" FontSize="14">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                            <Button Content="EXCLUIR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" FontFamily="Georgia" FontSize="14">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
                                         <Border Background="Transparent">
                                             <StackPanel>
-                                                <Image Source="/recursos/imagens/excluir.jpeg" Height="24" HorizontalAlignment="Center"/>
+                                                <Image Source="../Recursos/imagens/excluir.png" Height="24" HorizontalAlignment="Center"  />
                                                 <TextBlock Text="EXCLUIR" HorizontalAlignment="Center"/>
                                             </StackPanel>
                                         </Border>
@@ -97,12 +97,12 @@
                                 </Button.Template>
                             </Button>
 
-                            <Button Content="EDITAR" HorizontalAlignment="Center" Margin="0 5" Width="150" Height="40" FontFamily="Georgia" FontSize="14">
+                            <Button Content="EDITAR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" FontFamily="Georgia" FontSize="14">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
                                         <Border Background="Transparent">
                                             <StackPanel>
-                                                <Image Source="/recursos/imagens/editar.jpeg" Height="24" HorizontalAlignment="Center"/>
+                                                <Image Source= "../Recursos/Imagens/EDITAR.png" Height="24" HorizontalAlignment="Center"/>
                                                 <TextBlock Text="EDITAR" HorizontalAlignment="Center"/>
                                             </StackPanel>
                                         </Border>
@@ -110,12 +110,12 @@
                                 </Button.Template>
                             </Button>
 
-                            <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0 5" Width="150" Height="40" Click="Button_Click" >
+                            <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" >
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
                                         <Border Background="Transparent">
                                             <StackPanel>
-                                                <Image Source="/recursos/imagens/salvar.jpeg" Height="24" HorizontalAlignment="Center"/>
+                                                <Image Source="../Recursos/Imagens/salvar.png" Height="24" HorizontalAlignment="Center"/>
                                                 <TextBlock Text="SALVAR" HorizontalAlignment="Center"/>
                                             </StackPanel>
                                         </Border>

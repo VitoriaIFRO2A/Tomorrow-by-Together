@@ -18,7 +18,7 @@ namespace tbt.Models
             {
                 var comando = _conn.Query();
 
-                comando.CommandText = "INSERT INTO cliente VALUES (null, @nome, @cpf, @telefone, @estado, @cidade, @estado, @cidade, @rua, @numero, @bairro);" +
+                comando.CommandText = "INSERT INTO cliente VALUES (null, @nome, @cpf, @telefone, @estado, @cidade, @rua, @numero, @bairro);" +
 
                 comando.Parameters.AddWithValue("@nome", obj_cli.nome);
                 comando.Parameters.AddWithValue("@cpf", obj_cli.cpf);

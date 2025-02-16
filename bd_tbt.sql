@@ -2,7 +2,7 @@ Create database Tomorrow_by_Together;
 use Tomorrow_by_Together;
 
 Create table Cliente(
-	id_cli int auto_increment,
+	id_cli int primary key auto_increment,
     nome_cli varchar(200),
 	cpf_cli varchar(200),
     telefone_cli varchar(200),
@@ -14,7 +14,7 @@ Create table Cliente(
 );
 
 create table funcionario(
-	id_fun int auto_increment,
+	id_fun int primary key auto_increment,
     nome_fun varchar(200),
     data_nascimento_fun date,
 	cpf_fun varchar(200),
@@ -31,7 +31,7 @@ create table funcionario(
 );
 
 create table login(
-	id_login int auto_increment,
+	id_login int primary key auto_increment,
 	usuario_login varchar(200),
 	senha_login varchar(200),
 	id_fun_fk int,

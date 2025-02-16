@@ -23,12 +23,12 @@
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 110 0 0" >
             <TextBlock Text="Usuário:" HorizontalAlignment="Left" FontFamily="Georgia"></TextBlock>
-            <TextBox Height="20" Width="130" HorizontalAlignment="Center" BorderBrush="#F74780" Margin="10 0 0 0"></TextBox>
+            <TextBox Height="20" Width="130" HorizontalAlignment="Center" BorderBrush="#F74780" Margin="10 0 0 0" Name="usuariotxt"></TextBox>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 170 0 0" >
             <TextBlock Text="Senha:" HorizontalAlignment="Left" FontFamily="Georgia"></TextBlock>
-            <TextBox Height="20" Width="130" HorizontalAlignment="Center" BorderBrush="#F74780" Margin="10 0 0 0"></TextBox>
+            <TextBox Height="20" Width="130" HorizontalAlignment="Center" BorderBrush="#F74780" Margin="10 0 0 0" Name="senhatxt"></TextBox>
         </StackPanel>
 
         <!-- Botões de Confirmar e Cancelar -->

@@ -61,7 +61,7 @@ create table produto(
     valor_aluguel_pro float,
     cor_pro varchar(200),
     id_for_fk int,
-    foreign key (id_for_fk) references fornecedir (id_for)
+    foreign key (id_for_fk) references fornecedor (id_for)
 );
 
 create table venda(
@@ -82,4 +82,5 @@ create table venda_produto(
     foreign key (id_pro_fk) references produto (id_pro)
 );
 
-insert into login values (1, 'admin', '1234', null);
+insert into funcionario values (null, 'admin', null, null, null, null, 'admin', null, null, null, null, null, null, null);
+insert into login values (1, 'admin', '1234', 1);

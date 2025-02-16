@@ -125,6 +125,7 @@
     <Compile Include="Models\Funcionario.cs" />
     <Compile Include="Models\FuncionarioDAO.cs" />
     <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\LoginDAO.cs" />
     <Compile Include="Models\Produto.cs" />
     <Compile Include="Models\ProdutoDAO.cs" />
     <Compile Include="Recursos\Imagens\TelaUsuario.xaml.cs">

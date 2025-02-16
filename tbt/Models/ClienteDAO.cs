@@ -43,5 +43,89 @@ namespace tbt.Models
                 throw ex;
             }
         }
+
+
+
+        public Cliente Select(string cpf_cliente)
+        {
+            try
+            {
+                var comando = _conn.Query();
+
+                comando.CommandText = "SELECT * FROM cliente WHERE cpf_cli = @cpf";
+                comando.Parameters.AddWithValue("@cpf", cpf_cliente);
+
+                using (var reader = comando.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        Cliente cliente = new Cliente
+                        {
+                            id = reader.GetInt32("id_cli"),
+                            nome = reader.GetString("nome_cli"),
+                            cpf = reader.GetString("cpf_cli"),
+                            telefone = reader.GetString("telefone_cli"),
+                            estado = reader.GetString("estado_cli"),
+                            cidade = reader.GetString("cidade_cli"),
+                            rua = reader.GetString("rua_cli"),
+                            numero = reader.GetInt32("numero_cli"),
+                            bairro = reader.GetString("bairro_cli")
+                        };
+                        return cliente;
+                    }
+                    else
+                    {
+                        throw new Exception("Cliente não encontrado.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao realizar consulta.", ex);
+            }
+        }
+
+
+
+        public List<Cliente> ObterClientes()
+        {
+            List<Cliente> clientes = new List<Cliente>();
+
+            try
+            {
+                var comando = _conn.Query();
+
+                comando.CommandText = "SELECT * FROM cliente";
+
+                using (var reader = comando.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var cliente = new Cliente
+                        {
+                            id = reader.GetInt32("id_cli"),
+                            nome = reader.GetString("nome_cli"),
+                            cpf = reader.GetString("cpf_cli"),
+                            telefone = reader.GetString("telefone_cli"),
+                            estado = reader.GetString("estado_cli"),
+                            cidade = reader.GetString("cidade_cli"),
+                            rua = reader.GetString("rua_cli"),
+                            numero = reader.GetInt32("numero_cli"),
+                            bairro = reader.GetString("bairro_cli")
+                        };
+
+                        clientes.Add(cliente);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                
+                throw new Exception("Erro ao buscar clientes", ex);
+            }
+
+            return clientes; 
+        }
+
     }
 }

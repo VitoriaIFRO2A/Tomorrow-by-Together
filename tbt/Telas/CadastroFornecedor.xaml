@@ -46,42 +46,42 @@
 
                             <!-- Razão Social -->
                             <TextBlock Text="RAZÃO SOCIAL:" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" VerticalAlignment="Center" Height="25" />
+                            <TextBox Grid.Column="1" VerticalAlignment="Center" Height="25" Name="razao_social"/>
 
                             <!-- Nome Fantasia -->
                             <TextBlock Text="NOME FANTASIA:" Grid.Row="1" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Height="25"/>
+                            <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Height="25" Name="nome_fantasia"/>
 
                      
                           
 
                             <!-- E-MAIL -->
                             <TextBlock Text="E-MAIL:" Grid.Row="2" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Height="25"/>
+                            <TextBox Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Height="25" Name="email"/>
 
                             <!-- TELEFONE -->
                             <TextBlock Text="TELEFONE:" Grid.Row="3" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Height="25"/>
+                            <TextBox Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Height="25" Name="telefone"/>
 
                             <!-- ESTADO -->
                             <TextBlock Text="ESTADO:" Grid.Row="4" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Height="25"/>
+                            <TextBox Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Height="25" Name="estado"/>
 
                             <!-- CIDADE -->
                             <TextBlock Text="CIDADE:" Grid.Row="5" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" Height="25"/>
+                            <TextBox Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" Height="25" Name="cidade"/>
 
                             <!-- BAIRRO -->
                             <TextBlock Text="BAIRRO:" Grid.Row="6" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="6" VerticalAlignment="Center" Height="25"/>
+                            <TextBox Grid.Column="1" Grid.Row="6" VerticalAlignment="Center" Height="25" Name="bairro"/>
 
                             <!-- RUA/AVENIDA -->
                             <TextBlock Text="RUA/AVENIDA:" Grid.Row="7" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="7" VerticalAlignment="Center" Height="25"/>
+                            <TextBox Grid.Column="1" Grid.Row="7" VerticalAlignment="Center" Height="25" Name="rua"/>
 
                             <!-- NÚMERO -->
                             <TextBlock Text="NÚMERO:" Grid.Row="8" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
-                            <TextBox Grid.Column="1" Grid.Row="8" VerticalAlignment="Center" Height="25"/>
+                            <TextBox Grid.Column="1" Grid.Row="8" VerticalAlignment="Center" Height="25" Name="numero"/>
 
                         </Grid>
 

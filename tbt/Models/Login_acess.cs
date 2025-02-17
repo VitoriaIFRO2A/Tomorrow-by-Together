@@ -10,18 +10,18 @@ using tbt.Recursos.Imagens;
 
 namespace tbt.Models
 {
-    internal class Login
+    internal class Login_acess
     {
         public int id { get; set; }
         public string usuario { get; set; }
         public string senha { get; set; }
         public int id_fun_fk { get; set; }
        
-        public Login(string usuario, string senha)
-        {
-            this.usuario = usuario;
+        public Login_acess(string usuario, string senha) 
+        { 
+            this.usuario = usuario; 
             this.senha = senha;
         }
-        public Login() { }
+        public Login_acess() { }
     }
 }

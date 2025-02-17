@@ -5,14 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tbt.Telas"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="700">
+        Title="Login" Height="450" Width="700"
+        WindowState="Maximized"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        >
     <Grid Background="#FFFFFF">
         <!-- Cabeçalho com Título e Botão de Fechar -->
         <DockPanel  VerticalAlignment="Top" LastChildFill="False" Background="#ffe4ec" Height="69">
             <TextBlock Text="LOGIN" Margin="0 0 0 18" FontFamily="Georgia" Foreground="#F74780" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" DockPanel.Dock="Bottom"/>
 
-            <Button Content="X" Margin="0 3 3 0" FontFamily="Georgia" Foreground="#F74780" Width="25" Height="25" HorizontalAlignment="Right" 
-                VerticalAlignment="top" Background="Transparent" BorderThickness="1" BorderBrush="#F74780" DockPanel.Dock="Right"/>
+            <Button Content="X" Margin="0 3 3 0" FontFamily="Georgia" Foreground="#F74780" Width="25" Background="Transparent" BorderThickness="1" BorderBrush="#F74780" DockPanel.Dock="Right" Click="Button_Click_1"/>
         </DockPanel>
 
 
@@ -33,7 +36,7 @@
 
         <!-- Botões de Confirmar e Cancelar -->
         <StackPanel Orientation="Horizontal" Margin="0 270 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" >
-            <Button Content="EXCLUIR" HorizontalAlignment="Center" Margin="0 0 30 0" Width="80" Height="40" Click="Button_Click">
+            <Button HorizontalAlignment="Center" Margin="0 0 30 0" Width="80" Height="40" Click="Button_Click">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border CornerRadius="10" BorderThickness="1" BorderBrush="#F74780">

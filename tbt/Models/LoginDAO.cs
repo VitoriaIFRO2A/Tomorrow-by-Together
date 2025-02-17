@@ -13,7 +13,7 @@ namespace tbt.Models
     {
         private static Conexao _conn = new Conexao();
 
-        public Login Select(string usuario, string senha)
+        public Login_acess Select(string usuario, string senha)
         {
             try
             {
@@ -26,14 +26,14 @@ namespace tbt.Models
                 {
                     if (reader.Read())
                     {
-                        Login login = new Login
+                        Login_acess login_Acess = new Login_acess
                         {
                             id = reader.GetInt32("id_login"),
                             usuario = reader.GetString("usuario_login"),
                             senha = reader.GetString("senha_login"),
                             id_fun_fk = reader.GetInt32("id_fun_fk")  // Corrigido o nome da coluna
                         };
-                        return login;
+                        return login_Acess;
                     }
                     else
                     {

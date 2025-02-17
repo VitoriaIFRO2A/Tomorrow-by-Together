@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MySqlX.XDevAPI;
+using tbt.Models;
 
 namespace tbt.Telas
 {
@@ -21,7 +23,27 @@ namespace tbt.Telas
     {
         public ConsultarFuncionario()
         {
+
             InitializeComponent();
+
+            FuncionarioDAO funcionarioDAO = new FuncionarioDAO();
+
+            List<Funcionario> funcionarios = funcionarioDAO.ObterFuncionarios();
+
+            dgFuncionarios.ItemsSource = funcionarios;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string cpf = txtCpf.Text;
+
+            FuncionarioDAO funcionarioDAO = new FuncionarioDAO();
+
+            Funcionario funcionario = funcionarioDAO.Select(cpf);
+
+            List<Funcionario> listafuncionarios = new List<Funcionario> { funcionario };
+
+            dgFuncionarios.ItemsSource = listafuncionarios;
         }
     }
 }

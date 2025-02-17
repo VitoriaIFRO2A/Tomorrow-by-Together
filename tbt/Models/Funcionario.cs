@@ -9,6 +9,7 @@ namespace tbt.Models
 {
     internal class Funcionario
     {
+        public int id {  get; set; }
         public string nome { get; set; }
         public DateTime? data_nascimento { get; set; }
         public string cpf { get; set; }
@@ -23,7 +24,7 @@ namespace tbt.Models
         public int numero { get; set; }
         public string bairro { get; set; }
 
-        public Funcionario(string nome, DateTime data_nascimento, string cpf, string rg, string sexo, string funcao, string telefone, string email, string estado, string cidade, int numero, string bairro)
+        public Funcionario(string nome, DateTime? data_nascimento, string cpf, string rg, string sexo, string funcao, string telefone, string email, string estado, string cidade, int numero, string bairro)
         {
             this.nome = nome;
             this.data_nascimento = data_nascimento;

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tbt.Telas"
         mc:Ignorable="d"
-      Title="Consultar Funcionario" Height="400" Width="700" Background="#D9D9D9">
+      Title="Consultar Funcionario" Height="400" Width="800" Background="#D9D9D9">
 
     <!-- Definição de estilos para reutilização -->
     <Window.Resources>
@@ -53,27 +53,9 @@
                 <StackPanel Grid.Column="0">
                     <WrapPanel>
                         <Label Content="CPF:" Grid.Column="0" VerticalAlignment="Center"/>
-                        <TextBox x:Name="txtCNPJ" Width="100" Grid.Column="1"  BorderBrush="#F74780"/>
-                        <Button Content="Pesquisar" Grid.Column="2" Margin="1,0,0,0" Width="80" Background="White" BorderBrush="#F74780"/>
+                        <TextBox x:Name="txtCpf" Width="100" Grid.Column="1"  BorderBrush="#F74780"/>
+                        <Button Content="Pesquisar" Grid.Column="2" Margin="1,0,0,0" Width="80" Background="White" BorderBrush="#F74780" Click="Button_Click"/>
                     </WrapPanel>
-                </StackPanel>
-                <!-- Nome -->
-                <StackPanel Grid.Column="1">
-                    <WrapPanel>
-                        <Label Content="Nome:" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" BorderBrush="#F74780"/>
-                        <TextBox x:Name="txtNomeEmpresa" Width="95" Grid.Column="1" Grid.Row="1" BorderBrush="#F74780"/>
-                        <Button Content="Pesquisar" Grid.Column="2" Grid.Row="1" Margin="1,0,0,0" Width="80" Background="White" BorderBrush="#F74780"/>
-                    </WrapPanel>
-
-                </StackPanel>
-
-                <StackPanel Grid.Column="3">
-                    <WrapPanel>
-                        <Label Content="Codigo:" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center"  BorderBrush="#F74780"/>
-                        <TextBox x:Name="txtCodigo" Width="95" Grid.Column="1" Grid.Row="1" BorderBrush="#F74780"/>
-                        <Button Content="Pesquisar" Grid.Column="2" Grid.Row="1"  Width="70" Background="White" BorderBrush="#F74780"/>
-                    </WrapPanel>
-
                 </StackPanel>
 
 
@@ -81,11 +63,22 @@
         </GroupBox>
 
         <!-- DataGrid para exibir resultados da consulta -->
-        <DataGrid x:Name="dgFornecedores" Grid.Row="2" Margin="10,10,10,10" AutoGenerateColumns="False" Background="White" BorderBrush="#F74780" Grid.ColumnSpan="3">
+        <DataGrid x:Name="dgFuncionarios" Grid.Row="2" Margin="10,10,10,10" AutoGenerateColumns="False" Background="White" BorderBrush="#F74780" Grid.ColumnSpan="3">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Nome" Binding="{Binding NOME}" Width="*" />
-                <DataGridTextColumn Header="CPF" Binding="{Binding CPF}" Width="*" />
-                <DataGridTextColumn Header="Codigo" Binding="{Binding codigo}" Width="*" />
+                <DataGridTextColumn Header="Nome" Binding="{Binding nome}" Width="*" />
+                <DataGridTextColumn Header="Data de Nascimento" Binding="{Binding data_nascimento}" Width="*" />
+                <DataGridTextColumn Header="CPF" Binding="{Binding cpf}" Width="*" />
+                <DataGridTextColumn Header="RG" Binding="{Binding rg}" Width="*" />
+                <DataGridTextColumn Header="Sexo" Binding="{Binding sexo}" Width="*" />
+                <DataGridTextColumn Header="Função" Binding="{Binding funcao}" Width="*" />
+                <DataGridTextColumn Header="Telefone" Binding="{Binding telefone}" Width="*" />
+                <DataGridTextColumn Header="Email" Binding="{Binding email}" Width="*" />
+                <DataGridTextColumn Header="Estado" Binding="{Binding estado}" Width="*" />
+                <DataGridTextColumn Header="Cidade" Binding="{Binding cidade}" Width="*" />
+                <DataGridTextColumn Header="Rua" Binding="{Binding rua}" Width="*" />
+                <DataGridTextColumn Header="Número" Binding="{Binding numero}" Width="*" />
+                <DataGridTextColumn Header="Bairro" Binding="{Binding bairro}" Width="*" />
+
             </DataGrid.Columns>
         </DataGrid>
 

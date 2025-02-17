@@ -84,3 +84,5 @@ create table venda_produto(
 
 insert into funcionario values (null, 'admin', null, null, null, null, 'admin', null, null, null, null, null, null, null);
 insert into login values (1, 'admin', '1234', 1);
+
+select * from cliente;

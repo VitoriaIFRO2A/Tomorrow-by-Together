@@ -5,52 +5,69 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tbt.Telas"
         mc:Ignorable="d"
-      Title="Menu" Height="450" Width="800" Background="#FF3B3B3B">
+        Title="Menu" Height="550" Width="800" Background="#FF3B3B3B"
+        WindowState="Maximized"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        >
     <Grid>
         <!-- Menu Lateral -->
-
+        <ScrollViewer>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="0 0 0 0" Width="200" Background="#ffeff2">
-            <WrapPanel Margin="0 50 0 10"  Background="#E18585" Height="35" Width="200">
-                <Image Source="/Recursos/Imagens/home.png" Margin="10 5 0 0" Width="25"></Image>
-                <TextBlock Text="Home" Margin="63 10 0 0" FontFamily="georgia"/>
-            </WrapPanel>
+            
 
             <WrapPanel Margin="10 10 0 20" >
                 <Image Source="/Recursos/Imagens/produtos.png" Width="25"></Image>
-                <Button Content="Catálogo"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia"/>
-            </WrapPanel>
-
-
-
-
-            <WrapPanel Margin="10 10 0 20" >
-                <Image Source="/Recursos/Imagens/pesquisa.png" Width="25"></Image>
-                <Button Content="Consultar Produtos"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia"/>
+                <Button Content="Catálogo"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="catalogo" Click="catalogo_Click"/>
             </WrapPanel>
 
 
             <WrapPanel Margin="10 10 0 20" >
                 <Image Source="/Recursos/Imagens/pesquisa.png" Width="25"></Image>
-                <Button Content="Consultar funcionários"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia"/>
+                <Button Content="Consultar Produtos"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="consultaProdutos" Click="consultaProdutos_Click"/>
+            </WrapPanel>
+
+
+            <WrapPanel Margin="10 10 0 20" >
+                <Image Source="/Recursos/Imagens/pesquisa.png" Width="25"></Image>
+                <Button Content="Consultar funcionários"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="ConsultaFuncionario" Click="ConsultaFuncionario_Click"/>
+            </WrapPanel>
+            
+            <WrapPanel Margin="10 10 0 20" >
+                <Image Source="/Recursos/Imagens/pesquisa.png" Width="25"></Image>
+                <Button Content="Consultar Clientes"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="ConsultaCliente" Click="ConsultaCliente_Click"/>
+            </WrapPanel>
+            
+            <WrapPanel Margin="10 10 0 20" >
+                <Image Source="/Recursos/Imagens/pesquisa.png" Width="25"></Image>
+                <Button Content="Consultar fornecedor"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="consultaFornecedor" Click="consultaFornecedor_Click"/>
             </WrapPanel>
 
             <WrapPanel Margin="10 10 0 20" >
                 <Image Source="/Recursos/Imagens/usuario.png" Width="25"></Image>
-                <Button Content="Cadastrar cliente"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia"/>
+                <Button Content="Cadastrar cliente"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="cadastraCliente" Click="cadastraCliente_Click"/>
             </WrapPanel>
 
+            <WrapPanel Margin="10 10 0 20" >
+                <Image Source="/Recursos/Imagens/usuario.png" Width="25"></Image>
+                <Button Content="Cadastrar funcionario"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="CadastraFuncionario" Click="CadastraFuncionario_Click"/>
+            </WrapPanel>
 
+            <WrapPanel Margin="10 10 0 20" >
+                <Image Source="/Recursos/Imagens/usuario.png" Width="25"></Image>
+                <Button Content="Cadastrar produto"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="CadastraProduto" Click="CadastraProduto_Click"/>
+            </WrapPanel>
 
             <WrapPanel Margin="10 10 0 10" >
                 <Image Source="/Recursos/Imagens/usuario.png" Width="25"></Image>
-                <Button Content="Cadastrar fornecedor"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia"/>
+                <Button Content="Cadastrar fornecedor"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="CadastraFornecedor" Click="CadastraFornecedor_Click_1"/>
             </WrapPanel>
 
 
-
+            
 
         </StackPanel>
-
+        </ScrollViewer>
         <!-- Conteúdo Principal -->
         <Grid Margin="200,0,0,0" Background="#E18585">
             <TextBlock Text="Tomorrow by Together" FontSize="28" FontWeight="Bold" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,30,0,0" FontFamily="georgia"/>
@@ -60,7 +77,7 @@
             <Image Source="../Recursos/Imagens/logo.png" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="250"></Image>
 
             <!--botão sair-->
-            <Button HorizontalAlignment="Right" Margin="0 10 10 0"  Background="#E18585" VerticalAlignment="Top" Height="30" Width="30" BorderBrush="Transparent" >
+            <Button HorizontalAlignment="Right" Margin="0 10 10 0"  Background="#E18585" VerticalAlignment="Top" Height="30" Width="30" BorderBrush="Transparent" Click="Button_Click" >
                 <Image Source="/Recursos/Imagens/sair.png" HorizontalAlignment="Right" VerticalAlignment="Top" Height="30"></Image>
             </Button>
 

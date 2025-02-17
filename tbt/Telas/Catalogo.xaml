@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tbt.Telas"
         mc:Ignorable="d"
-       Title="Catálogo de Imagens" Height="800" Width="800">
+        Title="Catálogo de Imagens" Height="800" Width="800"
+        >
     <ScrollViewer>
         <Grid  Background="#ffe4ec" >
 

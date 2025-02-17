@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tbt.Telas"
         mc:Ignorable="d"
-       Title="Consultar Cliente" Height="350" Width="525" Background="#D9D9D9">
+       Title="Consultar Cliente" Height="350" Width="600" Background="#D9D9D9">
 
     <!-- Definição de estilos para reutilização -->
     <Window.Resources>
@@ -55,8 +55,8 @@
                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                     <WrapPanel>
                         <Label Content="CPF:" Grid.Column="0" VerticalAlignment="Center"/>
-                        <TextBox x:Name="txtCNPJ" Width="100" Grid.Column="1"  BorderBrush="#F74780"/>
-                        <Button Content="Pesquisar" Grid.Column="2" Margin="1,0,0,0" Width="80" Background="White" BorderBrush="#F74780"/>
+                        <TextBox x:Name="txtCpf" Width="100" Grid.Column="1"  BorderBrush="#F74780"/>
+                        <Button Content="Pesquisar" Grid.Column="2" Margin="1,0,0,0" Width="80" Background="White" BorderBrush="#F74780" Click="Button_Click"/>
                     </WrapPanel>
                 </StackPanel>
 
@@ -64,17 +64,23 @@
         </GroupBox>
 
         <!-- DataGrid para exibir resultados da consulta -->
-        <DataGrid x:Name="dgFornecedores" Grid.Row="2" Margin="10,10,10,10" AutoGenerateColumns="False" Background="White" BorderBrush="#F74780" Grid.ColumnSpan="3">
+        <DataGrid x:Name="DGclientes" Grid.Row="2" Margin="0" AutoGenerateColumns="False" Background="White" BorderBrush="#F74780" Grid.ColumnSpan="3">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="NOME" Binding="{Binding NOME}" Width="*" />
-                <DataGridTextColumn Header="CPF" Binding="{Binding CPF}" Width="*" />
-                <DataGridTextColumn Header="TELEFONE" Binding="{Binding TELEFONE}" Width="*" />
+                <DataGridTextColumn Header="ID" Binding="{Binding id}" />
+                <DataGridTextColumn Header="Nome" Binding="{Binding nome}" />
+                <DataGridTextColumn Header="CPF" Binding="{Binding cpf}" />
+                <DataGridTextColumn Header="Telefone" Binding="{Binding telefone}" />
+                <DataGridTextColumn Header="Estado" Binding="{Binding estado}" />
+                <DataGridTextColumn Header="Cidade" Binding="{Binding cidade}" />
+                <DataGridTextColumn Header="Rua" Binding="{Binding rua}" />
+                <DataGridTextColumn Header="Número" Binding="{Binding numero}" />
+                <DataGridTextColumn Header="Bairro" Binding="{Binding bairro}" />
             </DataGrid.Columns>
         </DataGrid>
 
         <!-- Botões de ação -->
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left" Margin="57,10,0,10" Grid.Column="1">
-            <Button Content="Realizar Nova Pesquisa" Margin="10"  Background="White" Foreground="Black" BorderBrush="#F74780" Height="31" >
+            <Button Content="Realizar Nova Pesquisa" Margin="10"  Background="White" Foreground="Black" BorderBrush="#F74780" Height="31" Click="Button_Click_1" >
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border CornerRadius="10" BorderThickness="1" BorderBrush="#F74780">

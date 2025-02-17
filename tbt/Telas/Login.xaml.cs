@@ -21,10 +21,13 @@ namespace tbt.Telas
     /// </summary>
     public partial class Login : Window
     {
+
+
         public Login()
         {
             InitializeComponent();
         }
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -56,6 +59,11 @@ namespace tbt.Telas
                 // Em caso de erro, exibe a mensagem de erro
                 MessageBox.Show(ex.Message); // Exibe o erro na tela
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

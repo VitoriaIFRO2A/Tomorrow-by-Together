@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using MySql.Data.MySqlClient;
 using tbt.database;
 
@@ -18,8 +19,11 @@ namespace tbt.Models
             {
                 var comando = _conn.Query();
 
-                comando.CommandText = "INSERT INTO cliente VALUES (null, @nome, @cpf, @telefone, @estado, @cidade, @rua, @numero, @bairro);" +
+                
+                comando.CommandText = "INSERT INTO cliente (nome_cli, cpf_cli, telefone_cli, estado_cli, cidade_cli, rua_cli, numero_cli, bairro_cli) " +
+                                      "VALUES (@nome, @cpf, @telefone, @estado, @cidade, @rua, @numero, @bairro);";
 
+                
                 comando.Parameters.AddWithValue("@nome", obj_cli.nome);
                 comando.Parameters.AddWithValue("@cpf", obj_cli.cpf);
                 comando.Parameters.AddWithValue("@telefone", obj_cli.telefone);
@@ -29,20 +33,26 @@ namespace tbt.Models
                 comando.Parameters.AddWithValue("@numero", obj_cli.numero);
                 comando.Parameters.AddWithValue("@bairro", obj_cli.bairro);
 
-
+                
                 var resultado = comando.ExecuteNonQuery();
+
 
                 if (resultado == 0)
                 {
                     throw new Exception("Ocorreram erros ao salvar as informações");
                 }
-
+                else if (resultado > 0)
+                {
+                    MessageBox.Show("Cliente inserido com sucesso!");
+                }
             }
-            catch (Exception ex)
+            catch
             {
-                throw ex;
+               
+                throw;
             }
         }
+
 
 
 
@@ -75,13 +85,35 @@ namespace tbt.Models
                     }
                     else
                     {
-                        throw new Exception("Cliente não encontrado.");
+                        return new Cliente
+                        {
+                            id = 0,
+                            nome = "Cliente não encontrado",
+                            cpf = "", 
+                            telefone = "",
+                            estado = "",
+                            cidade = "",
+                            rua = "",
+                            numero = 0,
+                            bairro = ""
+                        };
                     }
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                throw new Exception("Erro ao realizar consulta.", ex);
+                return new Cliente
+                {
+                    id = 0, 
+                    nome = "Cliente não encontrado",
+                    cpf = "", 
+                    telefone = "",
+                    estado = "",
+                    cidade = "",
+                    rua = "",
+                    numero = 0,
+                    bairro = ""
+                };
             }
         }
 

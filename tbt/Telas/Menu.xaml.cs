@@ -112,5 +112,11 @@ namespace tbt.Telas
             ExcluirCliente cliente = new ExcluirCliente();
             cliente.Show();
         }
+
+        private void Realizar_venda_Click(object sender, RoutedEventArgs e)
+        {
+            Venda Venda = new Venda();
+            Venda.Show();
+        }
     }
 }

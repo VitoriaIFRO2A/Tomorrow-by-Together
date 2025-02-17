@@ -67,22 +67,18 @@ create table produto(
 
 create table venda(
 	id_ven int primary key auto_increment,
-    hora_ven time,
     data_ven date,
     id_fun_fk int,
     foreign key (id_fun_fk) references funcionario (id_fun),
     id_cli_fk int,
-    foreign key (id_cli_fk) references cliente (id_cli)
-);
-
-create table venda_produto(
-	id_ven_pro int primary key auto_increment,
-	id_ven_fk int,
-    foreign key (id_ven_fk) references venda (id_ven),
+    foreign key (id_cli_fk) references cliente (id_cli),
     id_pro_fk int,
     foreign key (id_pro_fk) references produto (id_pro)
 );
 
-insert into login values (1, 'admin', '1234', null);
 
+
+insert into login values (1, 'admin', '1234', null);
+insert	into cliente values (null, 'jose', '000.000.000-00', '908777777768', 'Maranhão', 'cidade do maranhão', 'rua do maranhão', 12, 'bairro do maranhão');
+insert into 
 select * from login;

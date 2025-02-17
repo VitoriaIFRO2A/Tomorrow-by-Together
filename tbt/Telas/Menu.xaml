@@ -82,6 +82,12 @@
                   <Image Source="/Recursos/Imagens/Excluir.png" Width="25"></Image>
                   <Button Content="Excluir Cliente"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="ExcluirCliente" Click="ExcluirCliente_Click"/>
             </WrapPanel>
+            
+            <WrapPanel Margin="10 10 0 10" >
+                   <Image Source="../Recursos/Imagens/vendas.png" Width="25"></Image>
+                  <Button Content="Realizar Venda"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="Realizar_venda" Click="Realizar_venda_Click"/>
+            </WrapPanel>
+
 
 
 

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tbt.Telas"
         mc:Ignorable="d"
-       Title="Cadastro de produto" Height="500" Width="715">
+       Title="Cadastro de produto" Height="550" Width="715">
     <Grid Margin="0" Background="#ffe4ec">
 
         <Grid >
@@ -30,17 +30,20 @@
                         <RowDefinition Height="40"/>
                         <RowDefinition Height="40"/>
                         <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
                     </Grid.RowDefinitions>
 
                     <!-- Tipo de Equipamento -->
                     <TextBlock Text="Tipo de produto:" VerticalAlignment="Center" Margin="0,0,10,0" FontFamily="Georgia" FontSize="14"/>
                     <ComboBox Grid.Column="1" VerticalAlignment="Center" Height="25" Margin="0,0,0,0" SelectionChanged="ComboBox_SelectionChanged" Name="tipo_prod">
+                        <ComboBoxItem Content="Escorregador" />
+                        <ComboBoxItem Content="Piscina de bolinha" />
+                        <ComboBoxItem Content="pula-pula" />
                     </ComboBox>
 
                     <!-- Marca -->
                     <TextBlock Text="Marca:" Grid.Row="1" VerticalAlignment="Center" Margin="0,0,10,0" FontFamily="Georgia" FontSize="14"/>
-                    <ComboBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Height="25" Margin="0,0,0,0" Name="marca_prod">
-                    </ComboBox>
+                    <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Height="25" Name="marca_prod"/>
 
                     <!-- Modelo -->
                     <TextBlock Text="Modelo:" Grid.Row="2" VerticalAlignment="Center" Margin="0,0,10,0" FontFamily="Georgia" FontSize="14"/>
@@ -65,7 +68,15 @@
                     <!-- Cor -->
                     <TextBlock Text="Cor:" Grid.Row="7" VerticalAlignment="Center" Margin="0,0,10,0" FontFamily="Georgia" FontSize="14"/>
                     <ComboBox Grid.Column="1" Grid.Row="7" VerticalAlignment="Center" Height="25" Margin="0,0,0,0" Name="cor_prod">
+                        <ComboBoxItem Content="Vermelho" />
+                        <ComboBoxItem Content="Preto" />
+                        <ComboBoxItem Content="Branco" />
+                        <ComboBoxItem Content="Amarelo" />
                     </ComboBox>
+
+                    <!-- Valor do Aluguel -->
+                    <TextBlock Text="Cod. Fornecedor:" Grid.Row="8" VerticalAlignment="Center" Margin="0,0,10,0" FontFamily="Georgia" FontSize="14"/>
+                    <TextBox Grid.Column="1" Grid.Row="8" VerticalAlignment="Center" Height="25" Name="Fornecedor"/>
                 </Grid>
 
                 <!-- Botões Laterais -->
@@ -85,7 +96,7 @@
 
 
 
-                    <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" FontFamily="Georgia" FontSize="14" >
+                    <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" FontFamily="Georgia" FontSize="14" Click="Button_Click_1" >
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border Background="Transparent">

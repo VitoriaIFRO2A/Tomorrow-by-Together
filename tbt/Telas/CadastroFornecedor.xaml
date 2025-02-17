@@ -52,9 +52,6 @@
                             <TextBlock Text="NOME FANTASIA:" Grid.Row="1" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
                             <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Height="25" Name="nome_fantasia"/>
 
-                     
-                          
-
                             <!-- E-MAIL -->
                             <TextBlock Text="E-MAIL:" Grid.Row="2" VerticalAlignment="Center" Margin="0 0 10 0" FontFamily="Georgia" FontSize="14"/>
                             <TextBox Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Height="25" Name="email"/>
@@ -102,7 +99,7 @@
                             </Button>
 
 
-                            <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" FontFamily="Georgia" FontSize="14" >
+                            <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" FontFamily="Georgia" FontSize="14" Click="Button_Click" >
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
                                         <Border Background="Transparent">

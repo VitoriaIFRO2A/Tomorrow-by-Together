@@ -16,14 +16,13 @@ using tbt.Models;
 namespace tbt.Telas
 {
     /// <summary>
-    /// Lógica interna para ConsultarFornecedor.xaml
+    /// Lógica interna para ExcluirFornecedor.xaml
     /// </summary>
-    public partial class ConsultarFornecedor : Window
+    public partial class ExcluirFornecedor : Window
     {
-        public ConsultarFornecedor()
+        public ExcluirFornecedor()
         {
             InitializeComponent();
-
             FornecedorDAO fornecedorDAO = new FornecedorDAO();
             List<Fornecedor> fornecedor = fornecedorDAO.Obterfornecedores();
             dgFornecedores.ItemsSource = fornecedor;
@@ -31,21 +30,19 @@ namespace tbt.Telas
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                int id = Convert.ToInt32(Excluir_id.Text);
+                FornecedorDAO fornecedorDAO = new FornecedorDAO();
+                fornecedorDAO.Delete(id);
 
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            string nome_fantasia = txtNomeEmpresa.Text;
-
-            FornecedorDAO fornecedorDAO = new FornecedorDAO();
-
-            Fornecedor fornecedor = fornecedorDAO.select(nome_fantasia);
-
-            List<Fornecedor> listaFornecedor = new List<Fornecedor> { fornecedor };
-
-            // Agora a DataGrid receberá uma lista (mesmo que tenha um único cliente)
-            dgFornecedores.ItemsSource = listaFornecedor;
+                List<Fornecedor> fornecedor = fornecedorDAO.Obterfornecedores();
+                dgFornecedores.ItemsSource = fornecedor;
+            }
+            catch
+            {
+                MessageBox.Show("Nenhum id encontrado");
+            }
         }
     }
 }

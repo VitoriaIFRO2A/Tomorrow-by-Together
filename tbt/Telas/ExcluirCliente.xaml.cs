@@ -16,11 +16,11 @@ using tbt.Models;
 namespace tbt.Telas
 {
     /// <summary>
-    /// Lógica interna para ConsultarCliente.xaml
+    /// Lógica interna para ExcluirCliente.xaml
     /// </summary>
-    public partial class ConsultarCliente : Window
+    public partial class ExcluirCliente : Window
     {
-        public ConsultarCliente()
+        public ExcluirCliente()
         {
             InitializeComponent();
 
@@ -34,16 +34,24 @@ namespace tbt.Telas
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string cpf = txtCpf.Text;
+            try
+            {
+                int id = Convert.ToInt32(id_excluir.Text);
+                ClienteDAO clienteDAO = new ClienteDAO();
+                clienteDAO.Delete(id);
 
+                List<Cliente> cliente = clienteDAO.ObterClientes();
+
+                // Vincule a lista à DataGrid
+                DGclientes.ItemsSource = cliente;
+            }
+            catch
+            {
+                MessageBox.Show("Nenhum id encontrado");
+            }
             
-        }
+           
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-            ConsultarCliente consultarCliente = new ConsultarCliente();
-            consultarCliente.Show();
         }
     }
 }

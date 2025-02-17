@@ -159,5 +159,29 @@ namespace tbt.Models
             return clientes; 
         }
 
+        public void Delete(int id)
+        {
+            try
+            {
+                var comando = _conn.Query();
+
+                comando.CommandText = "DELETE FROM cliente WHERE id_cli = @id";
+
+                comando.Parameters.AddWithValue("@id", id);
+
+                var resultado = comando.ExecuteNonQuery();
+
+                if (resultado == 0)
+                {
+                    throw new Exception("Ocorreram erros ao salvar as informações.");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }

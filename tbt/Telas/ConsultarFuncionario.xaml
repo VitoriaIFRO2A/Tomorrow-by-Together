@@ -65,6 +65,7 @@
         <!-- DataGrid para exibir resultados da consulta -->
         <DataGrid x:Name="dgFuncionarios" Grid.Row="2" Margin="10,10,10,10" AutoGenerateColumns="False" Background="White" BorderBrush="#F74780" Grid.ColumnSpan="3">
             <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding id}" Width="*" />
                 <DataGridTextColumn Header="Nome" Binding="{Binding nome}" Width="*" />
                 <DataGridTextColumn Header="Data de Nascimento" Binding="{Binding data_nascimento}" Width="*" />
                 <DataGridTextColumn Header="CPF" Binding="{Binding cpf}" Width="*" />

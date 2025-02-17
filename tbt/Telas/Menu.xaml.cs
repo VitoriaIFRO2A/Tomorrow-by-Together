@@ -37,7 +37,8 @@ namespace tbt.Telas
 
         private void consultaProdutos_Click(object sender, RoutedEventArgs e)
         {
-            
+            ConsultarProduto produto = new ConsultarProduto();
+            produto.Show();
         }
 
         private void ConsultaFuncionario_Click(object sender, RoutedEventArgs e)
@@ -86,6 +87,30 @@ namespace tbt.Telas
         {
             CadastroFornecedor cadastroFornecedor = new CadastroFornecedor();
             cadastroFornecedor.Show();
+        }
+
+        private void ExcluirProduto_Click(object sender, RoutedEventArgs e)
+        {
+            ExcluirProduto excluirProduto = new ExcluirProduto();
+            excluirProduto.Show();
+        }
+
+        private void ExcluirFornecedor_Click(object sender, RoutedEventArgs e)
+        {
+            ExcluirFornecedor excluirFornecedor = new ExcluirFornecedor();
+            excluirFornecedor.Show();
+        }
+
+        private void ExcluirFuncionario_Click(object sender, RoutedEventArgs e)
+        {
+            ExcluirFuncionario excluirFuncionario = new ExcluirFuncionario();
+            excluirFuncionario.Show();
+        }
+
+        private void ExcluirCliente_Click(object sender, RoutedEventArgs e)
+        {
+            ExcluirCliente cliente = new ExcluirCliente();
+            cliente.Show();
         }
     }
 }

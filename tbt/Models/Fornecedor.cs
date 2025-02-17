@@ -8,6 +8,7 @@ namespace tbt.Models
 {
     internal class Fornecedor
     {
+        public int id {  get; set; }
         public string razao_social { get; set; }
         public string nome_fantasia { get; set; }
         public string email { get; set; }

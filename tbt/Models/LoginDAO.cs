@@ -26,12 +26,14 @@ namespace tbt.Models
                 {
                     if (reader.Read())
                     {
+                        // Verifica se o id_fun_fk é nulo e atribui valor apropriado
                         Login_acess login_Acess = new Login_acess
                         {
                             id = reader.GetInt32("id_login"),
                             usuario = reader.GetString("usuario_login"),
                             senha = reader.GetString("senha_login"),
-                            id_fun_fk = reader.GetInt32("id_fun_fk")  // Corrigido o nome da coluna
+                            // Se id_fun_fk for nulo, atribui null ou valor padrão
+                            id_fun_fk = reader.IsDBNull(reader.GetOrdinal("id_fun_fk")) ? (int?)null : reader.GetInt32("id_fun_fk")
                         };
                         return login_Acess;
                     }
@@ -50,5 +52,6 @@ namespace tbt.Models
             }
         }
     }
+
 
 }

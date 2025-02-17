@@ -164,11 +164,26 @@
     <Compile Include="Telas\ConsultarFuncionario.xaml.cs">
       <DependentUpon>ConsultarFuncionario.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Telas\ConsultarProduto.xaml.cs">
+      <DependentUpon>ConsultarProduto.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Telas\DadosCorretos.xaml.cs">
       <DependentUpon>DadosCorretos.xaml</DependentUpon>
     </Compile>
     <Compile Include="Telas\DadosIncorretos.xaml.cs">
       <DependentUpon>DadosIncorretos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ExcluirCliente.xaml.cs">
+      <DependentUpon>ExcluirCliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ExcluirFornecedor.xaml.cs">
+      <DependentUpon>ExcluirFornecedor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ExcluirFuncionario.xaml.cs">
+      <DependentUpon>ExcluirFuncionario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ExcluirProduto.xaml.cs">
+      <DependentUpon>ExcluirProduto.xaml</DependentUpon>
     </Compile>
     <Compile Include="Telas\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -228,11 +243,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Telas\ConsultarProduto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Telas\DadosCorretos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Telas\DadosIncorretos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Telas\ExcluirCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Telas\ExcluirFornecedor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Telas\ExcluirFuncionario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Telas\ExcluirProduto.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

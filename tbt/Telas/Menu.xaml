@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tbt.Telas"
         mc:Ignorable="d"
-        Title="Menu" Height="550" Width="800" Background="#FF3B3B3B"
+        Title="Menu" Height="1000" Width="800" Background="#FF3B3B3B"
         WindowState="Maximized"
         WindowStyle="None"
         ResizeMode="NoResize"
@@ -62,11 +62,30 @@
                 <Image Source="/Recursos/Imagens/usuario.png" Width="25"></Image>
                 <Button Content="Cadastrar fornecedor"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="CadastraFornecedor" Click="CadastraFornecedor_Click_1"/>
             </WrapPanel>
-
-
             
+            <WrapPanel Margin="10 10 0 10" >
+                <Image Source="/Recursos/Imagens/Excluir.png" Width="25"></Image>
+                <Button Content="Excluir Produto"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="ExcluirProduto" Click="ExcluirProduto_Click"/>
+            </WrapPanel>
 
-        </StackPanel>
+            <WrapPanel Margin="10 10 0 10" >
+                 <Image Source="/Recursos/Imagens/Excluir.png" Width="25"></Image>
+                 <Button Content="Excluir Fornecedor"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="ExcluirFornecedor" Click="ExcluirFornecedor_Click"/>
+            </WrapPanel>
+
+            <WrapPanel Margin="10 10 0 10" >
+                  <Image Source="/Recursos/Imagens/Excluir.png" Width="25"></Image>
+                  <Button Content="Excluir Funcionario"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="ExcluirFuncionario" Click="ExcluirFuncionario_Click"/>
+            </WrapPanel>
+
+            <WrapPanel Margin="10 10 0 10" >
+                  <Image Source="/Recursos/Imagens/Excluir.png" Width="25"></Image>
+                  <Button Content="Excluir Cliente"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="ExcluirCliente" Click="ExcluirCliente_Click"/>
+            </WrapPanel>
+
+
+
+            </StackPanel>
         </ScrollViewer>
         <!-- Conteúdo Principal -->
         <Grid Margin="200,0,0,0" Background="#E18585">

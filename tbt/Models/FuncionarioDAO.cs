@@ -190,6 +190,38 @@ namespace tbt.Models
 
             return func;
         }
+
+        public void Delete(int id)
+        {
+            try
+            {
+                var comando = _conn.Query();
+
+                // Deleta primeiro da tabela 'login'
+                comando.CommandText = "DELETE FROM login WHERE id_fun_fk = @id";
+                comando.Parameters.Clear();  // Limpa os parâmetros para o próximo comando
+                comando.Parameters.AddWithValue("@id", id);
+                int resultadoLogin = comando.ExecuteNonQuery();
+
+                // Agora, deleta da tabela 'funcionario'
+                comando.CommandText = "DELETE FROM funcionario WHERE id_fun = @id";
+                comando.Parameters.Clear();  // Limpa os parâmetros para o próximo comando
+                comando.Parameters.AddWithValue("@id", id);
+                int resultadoFuncionario = comando.ExecuteNonQuery();
+
+                // Verifica se ambos os comandos foram executados corretamente
+                if (resultadoLogin == 0 && resultadoFuncionario == 0)
+                {
+                    throw new Exception("Nenhum registro encontrado para excluir.");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 
 

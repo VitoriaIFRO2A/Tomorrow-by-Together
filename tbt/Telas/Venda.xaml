@@ -41,7 +41,7 @@
         </StackPanel>
 
         <WrapPanel Grid.Row="3" HorizontalAlignment="Center">
-            <Button  Content="Cancelar" FontSize="20" Padding="5" Margin="4" Background="Transparent"/>
+            <Button  Content="Cancelar" FontSize="20" Padding="5" Margin="4" Background="Transparent" Click="Button_Click_4"/>
             <Button  Content="Vender" FontSize="20" Margin="4" Background="Transparent" Click="Button_Click_3"/>
         </WrapPanel>
     </Grid>

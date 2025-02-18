@@ -11,25 +11,31 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using tbt.Models;
 
 namespace tbt.Telas
 {
     /// <summary>
-    /// Lógica interna para Catalogo.xaml
+    /// Lógica interna para ConsultaVenda.xaml
     /// </summary>
-    public partial class Catalogo : Window
+    public partial class ConsultaVenda : Window
     {
-        public Catalogo()
+        public ConsultaVenda()
         {
             InitializeComponent();
+
+            VendaDAO vendaDAO = new VendaDAO();
+            List<Venda_prod> venda =  vendaDAO.ObterVendas();
+
+            dgvenda.ItemsSource = venda;
+        }
+
+        private void dgprodutos_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
         }

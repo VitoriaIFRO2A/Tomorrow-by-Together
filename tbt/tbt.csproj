@@ -169,6 +169,9 @@
     <Compile Include="Telas\ConsultarProduto.xaml.cs">
       <DependentUpon>ConsultarProduto.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Telas\ConsultaVenda.xaml.cs">
+      <DependentUpon>ConsultaVenda.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Telas\DadosCorretos.xaml.cs">
       <DependentUpon>DadosCorretos.xaml</DependentUpon>
     </Compile>
@@ -249,6 +252,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Telas\ConsultarProduto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Telas\ConsultaVenda.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

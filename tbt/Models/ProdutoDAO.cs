@@ -44,9 +44,9 @@ namespace tbt.Models
                 }
 
             }
-            catch (Exception ex)
+            catch
             {
-                throw ex;
+                MessageBox.Show("Fornecedor não encontrado");
             }
         }
 

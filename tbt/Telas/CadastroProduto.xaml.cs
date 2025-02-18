@@ -51,5 +51,18 @@ namespace tbt.Telas
             ProdutoDAO produtoDAO = new ProdutoDAO();
             produtoDAO.Insert(produto);
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            tipo_prod.Text = "";
+            marca_prod.Text = "";
+            modelo_prod.Text = "";
+            refencia_prod.Text = "";
+            descricao_prod.Text = "";
+            preco_custo_prod.Text = "";
+            valor_aluguel_prod.Text = "";
+            cor_prod.Text = "";
+            Fornecedor.Text = "";
+        }
     }
 }

@@ -24,7 +24,7 @@ namespace tbt.Models
         public int numero { get; set; }
         public string bairro { get; set; }
 
-        public Funcionario(string nome, DateTime? data_nascimento, string cpf, string rg, string sexo, string funcao, string telefone, string email, string estado, string cidade, int numero, string bairro)
+        public Funcionario(string nome, DateTime? data_nascimento, string cpf, string rg, string sexo, string funcao, string telefone, string email, string estado, string cidade, int numero, string bairro, string rua)
         {
             this.nome = nome;
             this.data_nascimento = data_nascimento;
@@ -38,6 +38,7 @@ namespace tbt.Models
             this.cidade = cidade;
             this.numero = numero;
             this.bairro = bairro;
+            this.rua = rua;
         }
         public Funcionario() { }
     }

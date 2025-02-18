@@ -45,9 +45,9 @@ namespace tbt.Telas
                 // Vincule a lista à DataGrid
                 DGclientes.ItemsSource = cliente;
             }
-            catch
+            catch (Exception ex) 
             {
-                MessageBox.Show("Nenhum id encontrado");
+                MessageBox.Show(ex.Message);
             }
             
            

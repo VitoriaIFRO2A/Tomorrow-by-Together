@@ -39,9 +39,9 @@ namespace tbt.Telas
                 List<Produto> produto = buscar.ObterProduto();
                 dgprodutos.ItemsSource = produto;
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Nenhum id encontrado");
+                MessageBox.Show(ex.Message);
             }
         }
     }

@@ -79,6 +79,28 @@ create table venda(
 
 
 insert into login values (1, 'admin', '1234', null);
-insert	into cliente values (null, 'jose', '000.000.000-00', '908777777768', 'Maranhão', 'cidade do maranhão', 'rua do maranhão', 12, 'bairro do maranhão');
-insert into 
-select * from login;
+
+INSERT INTO Cliente (nome_cli, cpf_cli, telefone_cli, estado_cli, cidade_cli, rua_cli, numero_cli, bairro_cli)
+VALUES 
+('João Silva', '123.456.789-00', '(11) 98765-4321', 'São Paulo', 'São Paulo', 'Rua A', 100, 'Centro'),
+('Maria Oliveira', '234.567.890-11', '(21) 91234-5678', 'Rio de Janeiro', 'Rio de Janeiro', 'Rua B', 200, 'Botafogo');
+
+INSERT INTO funcionario (nome_fun, data_nascimento_fun, cpf_fun, rg_fun, sexo_fun, funcao_fun, telefone_fun, email_fun, estado_fun, cidade_fun, rua_fun, numero_fun, bairro_fun)
+VALUES
+('Carlos Souza', '1990-05-15', '111.222.333-44', 'MG123456', 'Masculino', 'Gerente', '(11) 12345-6789', 'carlos.souza@email.com', 'São Paulo', 'São Paulo', 'Rua X', 150, 'Vila Progresso'),
+('Ana Lima', '1985-11-20', '555.666.777-88', 'SP987654', 'Feminino', 'Atendente', '(21) 98765-4321', 'ana.lima@email.com', 'Rio de Janeiro', 'Rio de Janeiro', 'Rua Y', 250, 'Lapa');
+
+INSERT INTO fornecedor (razao_social_for, nome_fantasia_for, telefone_for, email_for, estado_for, cidade_for, bairro_for, rua_for, numero_for)
+VALUES
+('Empresa X LTDA', 'X Produtos', '(11) 33333-4444', 'contato@xprodutos.com.br', 'São Paulo', 'São Paulo', 'Jardim Paulista', 'Avenida Z', 500),
+('Fornecedor Y S/A', 'Y Comércio', '(21) 44444-5555', 'contato@ycomercio.com.br', 'Rio de Janeiro', 'Rio de Janeiro', 'Centro', 'Rua W', 750);
+
+INSERT INTO produto (tipo_produto_pro, marca_pro, modelo_pro, referencia_pro, descricao_pro, preco_custo_pro, valor_aluguel_pro, cor_pro, id_for_fk)
+VALUES
+('Cadeira', 'Marca X', 'Modelo 1', 'REF123', 'Cadeira de escritório confortável', 150.00, 50.00, 'Preta', 1),
+('Mesa', 'Marca Y', 'Modelo 2', 'REF456', 'Mesa de madeira', 300.00, 100.00, 'Marrom', 2);
+
+INSERT INTO venda (data_ven, id_fun_fk, id_cli_fk, id_pro_fk)
+VALUES
+('2025-02-17', 1, 1, 1),
+('2025-02-18', 2, 2, 2);

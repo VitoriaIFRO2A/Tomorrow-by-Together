@@ -123,7 +123,7 @@
                         <!-- Botões Laterais -->
 
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="center" VerticalAlignment="Bottom" >
-                            <Button Content="LIMPAR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" FontFamily="Georgia" FontSize="14">
+                            <Button Content="LIMPAR" HorizontalAlignment="Center" Margin="0,5" Width="150" Height="40" FontFamily="Georgia" FontSize="14" Click="Button_Click_1">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
                                         <Border Background="Transparent">

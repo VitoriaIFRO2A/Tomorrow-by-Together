@@ -10,12 +10,12 @@ namespace tbt.Models
     internal class Venda_prod
     {
         public int id { get; set; }
-        public DateTime data { get; set; }
+        public DateTime? data { get; set; }
         public int id_fun { get; set; }
         public int id_cli { get; set; }
         public int id_pro { get; set; }
 
-        public Venda_prod(DateTime date, int id_fun, int id_cli, int id_pro)
+        public Venda_prod(DateTime? date, int id_fun, int id_cli, int id_pro)
         {
             this.data = date;
             this.id_fun = id_fun;

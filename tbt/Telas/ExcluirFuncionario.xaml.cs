@@ -43,9 +43,9 @@ namespace tbt.Telas
 
                 dgFuncionarios.ItemsSource = funcionarios;
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Nenhum id encontrado");
+                MessageBox.Show(ex.Message);
             }
         }
     }

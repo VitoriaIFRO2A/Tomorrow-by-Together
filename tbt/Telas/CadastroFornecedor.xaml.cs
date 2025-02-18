@@ -49,5 +49,18 @@ namespace tbt.Telas
             }
 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            razao_social.Text = "";
+            nome_fantasia.Text = "";
+            email.Text = "";
+            telefone.Text = "";
+            estado.Text = "";
+            cidade.Text = "";
+            bairro.Text = "";
+            rua.Text = "";
+            numero.Text = "";
+        }
     }
 }

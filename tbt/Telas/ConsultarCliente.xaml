@@ -91,7 +91,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Content="Voltar ao Menu Inicial" Margin="10"  Background="White" Foreground="Black" BorderBrush="#F74780">
+            <Button Content="Voltar ao Menu Inicial" Margin="10"  Background="White" Foreground="Black" BorderBrush="#F74780" Click="Button_Click_2">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border CornerRadius="10" BorderThickness="1" BorderBrush="#F74780">

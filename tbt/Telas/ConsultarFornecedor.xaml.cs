@@ -47,5 +47,17 @@ namespace tbt.Telas
             // Agora a DataGrid receberá uma lista (mesmo que tenha um único cliente)
             dgFornecedores.ItemsSource = listaFornecedor;
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            ConsultarFornecedor consultar = new ConsultarFornecedor();
+            consultar.Show();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -118,5 +118,11 @@ namespace tbt.Telas
             Venda Venda = new Venda();
             Venda.Show();
         }
+
+        private void Consultavenda_Click(object sender, RoutedEventArgs e)
+        {
+            ConsultaVenda venda = new ConsultaVenda();
+            venda.Show();
+        }
     }
 }

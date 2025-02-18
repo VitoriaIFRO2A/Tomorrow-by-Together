@@ -39,9 +39,9 @@ namespace tbt.Telas
                 List<Fornecedor> fornecedor = fornecedorDAO.Obterfornecedores();
                 dgFornecedores.ItemsSource = fornecedor;
             }
-            catch
+            catch(Exception ex)
             {
-                MessageBox.Show("Nenhum id encontrado");
+                MessageBox.Show(ex.Message);
             }
         }
     }

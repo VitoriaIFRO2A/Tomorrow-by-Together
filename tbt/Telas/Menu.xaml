@@ -88,7 +88,10 @@
                   <Button Content="Realizar Venda"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="Realizar_venda" Click="Realizar_venda_Click"/>
             </WrapPanel>
 
-
+                <WrapPanel Margin="10 10 0 20" >
+                    <Image Source="/Recursos/Imagens/pesquisa.png" Width="25"></Image>
+                    <Button Content="Consultar venda"  Width="160" Height="30" Background="#ffeff2" BorderBrush="Transparent" FontFamily="georgia" Name="Consultavenda" Click="Consultavenda_Click" />
+                </WrapPanel>
 
 
             </StackPanel>

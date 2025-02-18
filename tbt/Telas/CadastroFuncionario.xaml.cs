@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -52,7 +53,7 @@ namespace tbt.Telas
                 string senha_txt = senha.Text;
 
                 Login_acess login = new Login_acess(usuario_txt, senha_txt);
-                Funcionario funcionario = new Funcionario(nome_fun, data_nascimento, cpf_fun, rg_fun, sexo, cargo_fun, telefone_fun, email_fun, estado_fun, cidade_fun, numero_fun, bairro_fun);
+                Funcionario funcionario = new Funcionario(nome_fun, data_nascimento, cpf_fun, rg_fun, sexo, cargo_fun, telefone_fun, email_fun, estado_fun, cidade_fun, numero_fun, bairro_fun, rua_fun);
 
                 FuncionarioDAO funcionarioDAO = new FuncionarioDAO();
                 funcionarioDAO.Insert(funcionario, login);
@@ -67,6 +68,24 @@ namespace tbt.Telas
         private void numer_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            nome_completo.Text = "";
+            data_nas.Text = "";
+            cpf.Text = "";
+            rg.Text = "";
+            telefone.Text = "";
+            email.Text = "";
+            cargo.Text = "";
+            estado.Text = "";
+            cidade.Text = "";
+            bairro.Text = "";
+            rua.Text = "";
+            numero.Text = "";
+            usuario.Text = "";
+            senha.Text = "";
         }
     }
 }

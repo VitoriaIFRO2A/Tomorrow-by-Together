@@ -40,5 +40,17 @@ namespace tbt.Telas
 
             dgprodutos.ItemsSource = produtos;
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            ConsultarProduto consultarProduto = new ConsultarProduto();
+            consultarProduto.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

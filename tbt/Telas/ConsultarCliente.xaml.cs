@@ -36,7 +36,14 @@ namespace tbt.Telas
         {
             string cpf = txtCpf.Text;
 
-            
+            ClienteDAO clienteDAO = new ClienteDAO();
+            Cliente cliente = clienteDAO.Select(cpf);
+            List<Cliente> clientes = new List<Cliente>() {cliente };
+
+
+
+            // Agora a DataGrid receberá uma lista (mesmo que tenha um único cliente)
+            DGclientes.ItemsSource = clientes;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -44,6 +51,11 @@ namespace tbt.Telas
             this.Close();
             ConsultarCliente consultarCliente = new ConsultarCliente();
             consultarCliente.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

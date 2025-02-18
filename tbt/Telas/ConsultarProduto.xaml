@@ -79,7 +79,7 @@
 
             <!-- Botões de ação -->
             <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="center" Margin="0">
-                <Button Content="Realizar Nova Pesquisa" Margin="10"  Background="White" Foreground="Black" BorderBrush="#F74780" Height="31">
+                <Button Content="Realizar Nova Pesquisa" Margin="10"  Background="White" Foreground="Black" BorderBrush="#F74780" Height="31" Click="Button_Click_1">
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <Border CornerRadius="10" BorderThickness="1" BorderBrush="#F74780">
@@ -90,7 +90,7 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                <Button Content="Voltar ao Menu Inicial" Margin="10"  Background="White" Foreground="Black" BorderBrush="#F74780">
+                <Button Content="Voltar ao Menu Inicial" Margin="10"  Background="White" Foreground="Black" BorderBrush="#F74780" Click="Button_Click_2">
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <Border CornerRadius="10" BorderThickness="1" BorderBrush="#F74780">
